@@ -14,3 +14,5 @@
 .filter-meta { display:flex; gap:.6rem; align-items:center; justify-content:space-between; margin:1rem 0 1.2rem; padding-top:.9rem; border-top:1px solid var(--border); font-size:.9rem; }
 
 .filter-status { display: inline-block; margin-top: .75rem; font-size: .9rem; opacity: .78; }
+
+.checksum-table .tr{grid-template-columns:1.2fr 2fr .8fr}.checksum-table .tr span:first-child{color:var(--text)}.checksum-table .tr span:nth-child(2){color:var(--accent2);overflow-wrap:anywhere}.checksum-table .tr span:nth-child(3) a{color:var(--accent2);text-decoration:none;font-weight:800}@media(max-width:720px){.checksum-table .tr{grid-template-columns:1fr}.checksum-table .tr span:nth-child(2){font-size:.82rem}}
