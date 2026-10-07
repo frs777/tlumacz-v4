@@ -1,0 +1,137 @@
+ M .github/workflows/build-windows.yml
+ M .gitignore
+ M CHANGELOG.md
+ M README.en.md
+ M README.md
+ M README_pl.md
+ D config.example.json
+ M docs/BUG.md
+ D docs/CHANGELOG.md
+ D docs/IMPLEMENTACJA-TRANSLATEGEMMA.md
+ D docs/LICENSE_GEMMA.txt
+ D docs/ROBOCZE/kompilacja-testow.md
+ D docs/ROBOCZE/kompilacja-testow.odt
+ D docs/ROBOCZE/problem-html.md
+ D "docs/ROBOCZE/testy-rodzajow plikow-llama.cpp-10-09-2026.md"
+ M docs/STATUS.md
+ M docs/TODO.md
+ D docs/archive/ARCHITEKTURA.md
+ D docs/archive/AUDYT_SZCZEGOLOWY_V3.md
+ D docs/archive/PLAN_IMPLEMENTACJI_OPENVINO.md
+ D docs/archive/PLAN_TESTOW_OPENVINO.md
+ D docs/archive/PLAN_WDROZENIA.md
+ D docs/archive/PLAN_WDROZENIA_OPENVINO.md
+ D docs/archive/RAPORT_AUDYTU_V3.md
+ D docs/archive/audyt-2026-09-08.md
+ D docs/archive/convert.py
+ D docs/archive/plan-wdrozenia-translategemma.md
+ D docs/migracja.md
+ M docs/technical-docs/TRANSLATEGEMMA_DOKUMENTACJA_TECHNICZNA.md
+ M docs/technical-docs/cloud-translation.md
+ M docs/technical-docs/help-content.md
+ M docs/technical-docs/index.md
+ D docs/technical-docs/markdown-pipeline.md
+ D docs/technical-docs/markdown-qwen-doc-detailed-implementation-plan.md
+ D docs/technical-docs/markdown-qwen-doc-implementation-plan.md
+ M docs/technical-docs/models.md
+ M docs/technical-docs/packaging-release.md
+ M docs/technical-docs/server-management.md
+ D docs/technical-docs/translattegemma.md
+ M docs/technical-docs/user-guide.md
+ M packages/0.31.2/PKGBUILD
+ M pyproject.toml
+ D requirements-fastapi.txt
+ D requirements-openvino.txt
+ M requirements.txt
+ M tests/conftest.py
+ M tests/test_audit_bugs.py
+ M tests/test_backend_manager.py
+ M tests/test_config.py
+ M tests/test_core.py
+ M tests/test_main_window.py
+ M tests/test_server.py
+ M tlumacz/core.py
+ M tlumacz/i18n.py
+ M tlumacz/qt_gui/app.py
+ M tlumacz/qt_gui/backend_manager.py
+ M tlumacz/qt_gui/config.py
+ M tlumacz/qt_gui/help_texts.py
+ M tlumacz/qt_gui/main_window.py
+ M tlumacz/server.py
+ M tlumacz/skill.py
+ D transgemma.py
+?? .agents/
+?? .claude/
+?? .codex/
+?? .pi/
+?? .tree-ring/
+?? AGENTS.md
+?? Aperitium/
+?? CHANGELOG.md.bak.20260929-223248-983028
+?? CHANGELOG.md.bak.20260930-012826-153007
+?? MANIFEST.in
+?? RESEARCH_APERTIUM_BACKEND-completed-2026-09-28.md
+?? "Skille u\305\274ytkownika/"
+?? apertium-get.py
+?? backups/
+?? config/
+?? copyright/
+?? docs/technical-docs/apertium-backend-integration.md
+?? docs/technical-docs/filter-runtime-dependency-closure-2026-09-29.md
+?? docs/technical-docs/github-publishing-policy.md
+?? docs/technical-docs/xliff-pipeline.md
+?? filtry/
+?? java/
+?? npx
+?? packaging/
+?? "pliki testowe/tagi_pl3_pl.md"
+?? "pliki testowe/test8k/"
+?? smieci/
+?? sources/
+?? tests/backends/
+?? tests/fixtures/
+?? tests/test_cloud_providers.py
+?? tests/test_core.py.bak.20260929-222923-900475
+?? tests/test_core.py.bak.20260929-222949-065204
+?? tests/test_core.py.bak.20260929-223119-467730
+?? tests/test_core.py.bak.20260929-223125-582518
+?? tests/test_e2e_documents.py
+?? tests/test_epub.py
+?? tests/test_filter_bridge_protocol.py
+?? tests/test_filter_engine.py
+?? tests/test_html.py
+?? tests/test_installer.py
+?? tests/test_keys.py
+?? tests/test_language_detector.py
+?? tests/test_llama_config.py
+?? tests/test_office.py
+?? tests/test_okapi.py
+?? tests/test_segmentation.py
+?? tests/test_source_distribution.py
+?? tests/test_windows_release_workflow.py
+?? tests/test_xliff.py
+?? testy-llama-data-q8-parallel1-run1.json
+?? testy-llama-data-q8-parallel1-run2.json
+?? testy-llama-data-q8-parallel1-run3.json
+?? testy-llama-data-q8-parallel1-run4.json
+?? testy-llama-data-q8-parallel1-run5.json
+?? testy-llama.cpp/
+?? tlumacz/backends/
+?? tlumacz/cloud_providers.py
+?? tlumacz/config.json
+?? tlumacz/config/
+?? tlumacz/core.py.bak.20260929-222930-315446
+?? tlumacz/core.py.bak.20260929-222935-534819
+?? tlumacz/epub.py
+?? tlumacz/filter_engine/
+?? tlumacz/html.py
+?? tlumacz/installer.py
+?? tlumacz/keys.py
+?? tlumacz/language_detector.py
+?? tlumacz/llama_config.py
+?? tlumacz/mozhi.py
+?? tlumacz/office.py
+?? tlumacz/okapi.py
+?? tlumacz/segmentation.py
+?? tlumacz/simplytranslate.py
+?? tlumacz/xliff.py

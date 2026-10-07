@@ -1,0 +1,7 @@
+Tryb „auto” Mozhi automatycznie szuka najlepszej dostępnej instancji dla wybranego silnika.
+
+Mechanizm sprawdza równolegle znane instancje. Dla każdej z nich weryfikuje dostępność API, wybranego silnika oraz języków źródłowych, a następnie wykonuje kontrolne tłumaczenie i mierzy czas odpowiedzi. Do dalszego wyboru trafiają tylko instancje, które przejdą wymagane sprawdzenia i zwrócą poprawną, niepustą odpowiedź.
+
+Spośród poprawnie działających instancji wybierana jest najszybciej odpowiadająca. Jeżeli żadna instancja nie spełni warunków w limicie czasu, mechanizm używa domyślnej instancji awaryjnej. Ręcznie wybrana instancja omija automatyczny wybór.
+
+Kontrola wykonywana przez tryb „auto” służy wyłącznie do wyboru instancji i nie zastępuje właściwego tłumaczenia dokumentu.

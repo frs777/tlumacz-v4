@@ -1,0 +1,93 @@
+{
+  "version": "0.4.0",
+  "timestamp": "2026-09-26 02:18:34Z",
+  "latency_mode": "generation",
+  "latency_ms": 356.66860702137154,
+  "model": "translategemma-4b-it.Q5_K_M.gguf",
+  "prefix_caching_enabled": false,
+  "max_concurrency": 1,
+  "benchmarks": [
+    {
+      "concurrency": 1,
+      "context_size": 0,
+      "prompt_size": 512,
+      "response_size": 128,
+      "is_context_prefill_phase": false,
+      "pp_throughput": {
+        "mean": 39.27393525039433,
+        "std": 0.35184177234501135,
+        "values": [
+          38.92209347804932,
+          39.62577702273934
+        ]
+      },
+      "pp_req_throughput": {
+        "mean": 39.27393525039433,
+        "std": 0.35184177234501135,
+        "values": [
+          38.92209347804932,
+          39.62577702273934
+        ]
+      },
+      "tg_throughput": {
+        "mean": 5.85970876974134,
+        "std": 0.21980911711821438,
+        "values": [
+          5.639899652623126,
+          6.079517886859555
+        ]
+      },
+      "tg_req_throughput": {
+        "mean": 5.85970876974134,
+        "std": 0.21980911711821438,
+        "values": [
+          5.639899652623126,
+          6.079517886859555
+        ]
+      },
+      "peak_throughput": {
+        "mean": 6.5,
+        "std": 0.5,
+        "values": [
+          6.0,
+          7.0
+        ]
+      },
+      "peak_req_throughput": {
+        "mean": 6.5,
+        "std": 0.5,
+        "values": [
+          6.0,
+          7.0
+        ]
+      },
+      "ttfr": {
+        "mean": 12369.296643339718,
+        "std": 313.68945569571474,
+        "values": [
+          11973.221775959246,
+          12740.380708011799,
+          12394.28744604811
+        ]
+      },
+      "est_ppt": {
+        "mean": 12210.665470008584,
+        "std": 173.04663098184392,
+        "values": [
+          12383.712100990428,
+          12037.61883902674
+        ]
+      },
+      "e2e_ttft": {
+        "mean": 12567.334077029955,
+        "std": 173.04663098184392,
+        "values": [
+          12740.380708011799,
+          12394.28744604811
+        ]
+      },
+      "throughput_over_time": null,
+      "requests_throughput_over_time": null
+    }
+  ]
+}

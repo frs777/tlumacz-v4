@@ -1,0 +1,27 @@
+Tłumacz V4 — informacje o komponentach redystrybuowanych
+
+1. Kod Tłumacz V4
+   Licencja: MIT. Pełny tekst znajduje się w pliku LICENSE.
+
+2. Okapi runtime
+   Katalog: src/tlumacz/resources/okapi-runtime/
+   Runtime został przejęty z kontrolowanego runtime'u V3 i jest redystrybuowany
+   jako zasób pakietu. Dokumentacja prawna V3 wskazuje Apache License 2.0 jako
+   licencję większości aktualnych komponentów Okapi, z historycznymi wyjątkami.
+   Przed publiczną dystrybucją należy zachować właściwe notice/licencje dla
+   każdego faktycznie użytego artefaktu.
+
+3. Apertium runtime i dane językowe
+   Katalog: src/tlumacz/backends/apertium/native_runtime/
+   Runtime zawiera komponenty Apertium oraz dane językowe. W repozytorium V3
+   dostępne są teksty GPL-2.0, GPL-3.0, LGPL-2.1 i CC0 dla komponentów ekosystemu.
+   Dokładna licencja konkretnego pliku musi być zachowana zgodnie z jego źródłem.
+   Stan Fazy 11: para eng-pol nie jest jeszcze kompletna w artefakcie release.
+
+4. Java Filter Host
+   Źródło: src/tlumacz/resources/filter-host/FilterHost.java
+   Host korzysta z kontrolowanego runtime'u Okapi wymienionego powyżej.
+
+Niniejszy NOTICE nie zastępuje tekstów licencji. Teksty licencji używane przez
+kontrolowane komponenty znajdują się w katalogu licenses/ oraz w odpowiednich
+zasobach runtime.

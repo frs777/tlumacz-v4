@@ -1,0 +1,454 @@
+PLAN WDROŻENIA — MODULARNE BACKENDY I ROZSZERZALNY WŁASNY SERWER
+Data: 2026-10-07
+Projekt: /home/frs/Projekty/tlumacz-v4
+Status: PLAN DO AKCEPTACJI / BEZ ZMIAN W KODZIE
+
+1. CEL
+
+Doprowadzić warstwę backendów do stanu, w którym:
+- istniejące backendy pozostają funkcjonalnie niezmienione;
+- „Własny serwer” pozostaje opcją podłączenia zewnętrznego serwera OpenAI-compatible;
+- dodanie kolejnego backendu nie wymaga modyfikowania wspólnego pipeline'u tłumaczenia;
+- backendy są rejestrowane przez wspólny kontrakt i registry, a nie przez rosnący zestaw instrukcji if backend == ...;
+- konfiguracja, capabilities, health i lifecycle są deklarowane przez moduł backendu;
+- wariant „custom” nie jest mylony z providerem Cloud, mimo współdzielenia transportu/abstrakcji.
+
+2. STAN WYJŚCIOWY — USTALENIA Z AUDYTU
+
+Aktualnie istnieją osobne moduły:
+- src/tlumacz/backends/llama_cpp/
+- src/tlumacz/backends/cloud/
+- src/tlumacz/backends/apertium/
+
+Istnieje wspólny kontrakt TranslationBackend z translate() i health_check().
+
+Istnieje BackendRegistry, ale nadal zawiera routing zależny od konkretnych nazw:
+- llama
+- cloud/custom
+- apertium
+
+BackendRegistry posiada również konkretne pola implementacji, m.in. cloud, apertium i _llama.
+
+„custom” jest obecnie aktywną opcją GUI i korzysta z CloudRouter. Jest to już funkcjonalny mechanizm podłączenia zewnętrznego serwera OpenAI-compatible, ale architektonicznie jest jeszcze specjalnym przypadkiem routingu Cloud.
+
+Istnieją testy custom:
+- tests/test_backend_registry_custom.py
+- testy GUI, ustawień i persystencji związane z custom.
+
+Wcześniejszy plan architektoniczny definiuje Custom jako osobny segment odpowiedzialności: adapter OpenAI-compatible dla lokalnych i zdalnych serwerów, z własną konfiguracją endpointu, health/capabilities i lifecycle.
+
+3. ZASADA DOCELOWA
+
+Docelowy model:
+
+BackendContract
+    ↓
+BackendRegistry
+    ↓
+identyfikacja backendu + capabilities
+    ↓
+konkretny moduł backendu
+    ↓
+wspólny BackendResult
+
+Dodanie backendu powinno docelowo wymagać:
+1. utworzenia modułu backendu;
+2. implementacji wspólnego kontraktu;
+3. deklaracji capabilities/configuration;
+4. rejestracji modułu;
+5. testów kontraktowych.
+
+Nie powinno wymagać zmian w:
+- DocumentProcessor;
+- Filter Engine;
+- ChunkPlanner;
+- TranslationOrchestrator;
+- TranslationExecutor;
+- ResultValidator;
+- writerach;
+- wspólnym kontrakcie dokumentowym.
+
+4. ETAP 0 — CHARACTERIZATION I BACKUP
+
+Przed zmianami:
+- wykonać backup całego drzewa kodu;
+- zapisać SHA-256 backupu;
+- zebrać aktualny git diff;
+- uruchomić testy backendów;
+- zachować wynik jako baseline.
+
+Testy characterization muszą objąć:
+- llama;
+- cloud;
+- custom;
+- apertium;
+- translate;
+- translate_many;
+- health_check;
+- konfigurację;
+- wybór backendu;
+- GUI custom;
+- persystencję custom_server_url.
+
+Nie zmieniać istniejących funkcji przed zapisaniem baseline.
+
+5. ETAP 1 — USTABILIZOWANIE WSPÓLNEGO KONTRAKTU
+
+Rozszerzyć TranslationBackend do pełnego kontraktu backendowego, jeżeli analiza potwierdzi brakujące elementy:
+- identyfikator;
+- nazwa wyświetlana;
+- capabilities;
+- supported language pairs / sposób deklarowania możliwości;
+- translate;
+- opcjonalny batch;
+- health_check;
+- cancellation;
+- lifecycle/close;
+- jawna klasyfikacja błędów.
+
+Nie wymuszać sztucznie tych samych mechanizmów na backendach, które mają różne lifecycle. Kontrakt ma opisywać capability, a nie implementację.
+
+6. ETAP 2 — WPROWADZENIE REJESTRACJI BACKENDÓW
+
+Przebudować BackendRegistry z rejestru warunkowego na registry instancji/definicji backendów.
+
+Zamiast:
+- if backend == "llama"
+- if backend == "apertium"
+- if backend in {"cloud", "custom"}
+
+docelowo:
+- registry.get("llama");
+- registry.get("cloud");
+- registry.get("custom");
+- registry.get("apertium").
+
+Routing ma zależeć od zarejestrowanego backendu i jego capabilities.
+
+BackendRegistry nie powinien znać szczegółów implementacji każdego backendu poza composition root.
+
+7. ETAP 3 — ODDZIELENIE CUSTOM OD CLOUD NA POZIOMIE ODPOWIEDZIALNOŚCI
+
+Nie tworzyć drugiego transportu HTTP tylko dla custom.
+
+Zachować możliwość współdzielenia:
+- transportu OpenAI-compatible;
+- normalizacji odpowiedzi;
+- błędów transportowych;
+- timeoutów.
+
+Jednocześnie custom powinien mieć własny moduł odpowiedzialności:
+src/tlumacz/backends/custom/
+
+Moduł powinien obsługiwać:
+- endpoint użytkownika;
+- konfigurację;
+- API key, jeśli wymagany;
+- model/engine;
+- health;
+- capabilities;
+- lifecycle po stronie aplikacji, jeśli występuje.
+
+Custom nadal oznacza „użytkownik dostarcza serwer”; Tłumacz nie powinien automatycznie uruchamiać zewnętrznego serwera.
+
+8. ETAP 4 — CAPABILITIES
+
+Wprowadzić deklaratywny opis możliwości, np.:
+- translate;
+- batch;
+- health;
+- cancellation;
+- streaming, jeżeli kiedyś będzie potrzebny;
+- source/target language support;
+- OpenAI-compatible API.
+
+Pipeline pyta backend o capability zamiast zakładać, że konkretny backend ją posiada.
+
+Przykład:
+Jeżeli backend nie ma natywnego batcha, TranslationExecutor może użyć bezpiecznej ścieżki jednostkowej zgodnej z kontraktem.
+
+Nie dodawać specjalnego if-a dla każdej przyszłej implementacji.
+
+9. ETAP 5 — KONFIGURACJA
+
+Rozdzielić:
+- wspólny BackendRequest;
+- konfigurację specyficzną dla backendu;
+- dane sekretne;
+- capabilities.
+
+Nie rozszerzać centralnego BackendRequest dziesiątkami pól tylko dlatego, że jeden backend ich potrzebuje.
+
+Docelowo konfiguracja powinna być przekazywana do backendu jako jego własny, typowany profil/kontrakt.
+
+10. ETAP 6 — GUI
+
+GUI nie może znać szczegółów implementacyjnych backendu.
+
+Backend selector powinien korzystać z listy zarejestrowanych backendów.
+
+Dla custom zachować:
+- nazwę „Własny”;
+- pole endpointu;
+- informacje o kontrakcie OpenAI-compatible;
+- niezależną wartość custom_server_url.
+
+Własny serwer nie może nadpisywać konfiguracji llama.cpp.
+
+Przyszły backend może dostarczyć własne capabilities/config UI bez modyfikowania logiki wspólnego pipeline'u.
+
+11. ETAP 7 — TEST KONTRAKTOWY „NOWY BACKEND”
+
+Dodać sztuczny backend testowy, np. TestBackend, implementujący tylko wspólny kontrakt.
+
+Test ma wykazać:
+- rejestracja działa;
+- selection działa;
+- translate działa;
+- health działa;
+- pipeline tłumaczy dokument;
+- Filter Engine pozostaje bez zmian;
+- ChunkPlanner pozostaje bez zmian;
+- TranslationOrchestrator pozostaje bez zmian;
+- TranslationExecutor pozostaje bez zmian.
+
+To jest najważniejszy test rozszerzalności.
+
+12. ETAP 8 — REGRESJA ISTNIEJĄCYCH BACKENDÓW
+
+Po refaktorze uruchomić:
+- testy llama.cpp;
+- testy Cloud;
+- testy Custom;
+- testy Apertium;
+- testy BackendRegistry;
+- testy GUI;
+- testy ustawień/persystencji;
+- testy pipeline'u.
+
+Szczególnie sprawdzić, czy:
+- custom nadal łączy się z podanym endpointem;
+- Cloud nadal korzysta z provider registry;
+- llama nadal ma własny runtime;
+- Apertium nadal ma własny lifecycle;
+- żaden backend nie dostaje niejawnego routingu innego backendu.
+
+13. ETAP 9 — TEST E2E
+
+Wykonać rzeczywisty przepływ:
+
+dokument
+→ Filter
+→ Unit
+→ ChunkPlanner
+→ TranslationOrchestrator
+→ BackendRegistry
+→ wybrany backend
+→ BackendResult
+→ Validator
+→ Writer
+
+Powtórzyć dla:
+- llama;
+- custom;
+- cloud;
+- apertium, w zakresie jego kontraktu.
+
+Dla custom użyć kontrolowanego OpenAI-compatible endpointu, bez nazywania fake runtime'u rzeczywistym E2E produkcyjnym.
+
+14. ETAP 10 — DOKUMENTACJA
+
+Po wdrożeniu zaktualizować:
+- docs/ARCHITECTURE.md;
+- docs/STATUS.md;
+- docs/CHANGELOG.md;
+- docs/TODO.md, jeśli odpowiednie zadania zostaną zamknięte;
+- docs/technical-docs/models.md;
+- dokumentację backendów;
+- dokumentację custom/OpenAI-compatible;
+- indeks dokumentacji, jeśli zmieni się struktura modułów.
+
+Dokumentacja musi jasno rozróżniać:
+- backend;
+- provider Cloud;
+- custom endpoint;
+- model;
+- chat_template;
+- runtime.
+
+15. ETAP 11 — EXIT GATE
+
+Wdrożenie można zamknąć, gdy:
+
+1. każdy aktywny backend implementuje wspólny kontrakt;
+2. registry nie wymaga rozbudowy warunków if backend == ... dla nowych backendów;
+3. custom pozostaje osobną opcją podłączenia własnego serwera;
+4. custom nie jest traktowany jako provider Cloud;
+5. transport OpenAI-compatible może być współdzielony;
+6. konfiguracja backendu jest rozszerzalna;
+7. capabilities są deklaratywne;
+8. nowy TestBackend przechodzi przez cały pipeline bez zmian w pipeline;
+9. istniejące backendy przechodzą regresję;
+10. GUI custom zachowuje dotychczasowe zachowanie;
+11. sekrety nie trafiają do zwykłej konfiguracji;
+12. dokumentacja jest zsynchronizowana;
+13. pełna walidacja projektu jest wykonana.
+
+16. PODZIAŁ PRACY DLA AGENTÓW
+
+A. @AI Software Architect
+Zakres:
+- docelowy kontrakt Backend;
+- model capabilities;
+- granica BackendRegistry;
+- granica Cloud vs Custom;
+- kontrakt konfiguracji;
+- decyzja, co jest wspólnym transportem.
+
+Najważniejsze pliki:
+- src/tlumacz/domain/contracts.py
+- src/tlumacz/application/backend_registry.py
+- src/tlumacz/application/backend_service.py
+- docs/ARCHITECTURE.md
+- docs/technical-docs/models.md
+
+B. @Python / agent implementacyjny
+Zakres:
+- implementacja registry;
+- moduł custom;
+- konfiguracja backendów;
+- integracja bez naruszania pipeline.
+
+Najważniejsze miejsca:
+- src/tlumacz/application/backend_registry.py
+- src/tlumacz/application/backend_service.py
+- src/tlumacz/backends/cloud/
+- src/tlumacz/backends/custom/ (nowy moduł)
+- src/tlumacz/domain/contracts.py
+
+C. Agent TDD
+Zakres:
+- characterization;
+- test kontraktu;
+- TestBackend;
+- regresje;
+- test rozszerzalności bez zmian pipeline.
+
+Najważniejsze miejsca:
+- tests/test_backend_registry_custom.py
+- tests/test_application_core.py
+- tests/test_backend_controller.py
+- nowe tests/test_backend_contract.py
+- nowe tests/test_backend_extensibility.py
+
+D. @SentinelX
+Zakres:
+- backup;
+- stan repo;
+- testy środowiskowe;
+- compileall/Ruff;
+- pełna regresja;
+- E2E custom z rzeczywistym endpointem, jeśli dostępny;
+- kontrola orphan processes/secrets.
+
+E. Agent GUI/QML
+Uruchamiać tylko, jeżeli zmiana kontraktu wymusi zmianę prezentacji.
+Zakres:
+- dynamiczna lista backendów;
+- custom server UI;
+- persistence;
+- i18n.
+
+Najważniejsze:
+- src/tlumacz/qml_gui/bridge.py
+- src/tlumacz/qml_gui/config.py
+- src/tlumacz/qml_gui/ApiPage.qml
+- src/tlumacz/i18n.py
+- src/tlumacz/qml_gui/texts/*/custom.description.txt
+
+F. Agent dokumentacji
+Może zostać uruchomiony po zakończeniu implementacji.
+Zakres:
+- ARCHITECTURE;
+- STATUS;
+- CHANGELOG;
+- modele/backendy;
+- dokumentacja Custom;
+- indeks.
+
+17. KOLEJNOŚĆ AGENTÓW
+
+1. @AI Software Architect — kontrakt i architektura.
+2. Agent TDD — characterization + test kontraktu.
+3. @Python — implementacja.
+4. Agent TDD — GREEN + regresja.
+5. Agent GUI/QML — tylko jeśli kontrakt wymaga zmian UI.
+6. @SentinelX — backup + walidacja + E2E.
+7. Agent dokumentacji — synchronizacja dokumentacji.
+8. @AI Software Architect — końcowy przegląd architektury.
+
+Nie wykonywać równolegle zmian w tych samych plikach centralnych.
+
+18. NAJWAŻNIEJSZE MIEJSCA ZMIAN
+
+Priorytet P0:
+- src/tlumacz/domain/contracts.py
+- src/tlumacz/application/backend_registry.py
+- src/tlumacz/application/backend_service.py
+
+Priorytet P1:
+- src/tlumacz/backends/custom/ — nowy moduł
+- src/tlumacz/backends/cloud/ — wydzielenie wspólnego transportu, bez duplikacji
+- tests/test_backend_registry_custom.py
+- nowe testy kontraktowe/rozszerzalności
+
+Priorytet P1/P2:
+- src/tlumacz/qml_gui/bridge.py
+- src/tlumacz/qml_gui/config.py
+- src/tlumacz/qml_gui/ApiPage.qml
+- src/tlumacz/i18n.py
+
+Priorytet dokumentacyjny:
+- docs/ARCHITECTURE.md
+- docs/STATUS.md
+- docs/CHANGELOG.md
+- docs/technical-docs/models.md
+- dokumentacja Custom/OpenAI-compatible
+
+19. OGRANICZENIA
+
+Nie zmieniać w ramach tego planu:
+- FilterRegistry;
+- Okapi;
+- Filter Engine, poza wymaganym kontraktem integracyjnym;
+- ChunkPlanner, jeżeli test rozszerzalności nie wykaże rzeczywistego problemu;
+- TranslationOrchestrator, jeżeli wspólny kontrakt wystarcza;
+- istniejącego runtime llama.cpp;
+- istniejących providerów Cloud bez potrzeby.
+
+Nie tworzyć drugiego klienta HTTP tylko dla custom.
+
+Nie przenosić logiki tłumaczenia do GUI.
+
+Nie dodawać nowych backend-specific if-ów jako rozwiązania rozszerzalności.
+
+20. DEFINICJA SUKCESU
+
+Docelowy przykład:
+
+dodaj src/tlumacz/backends/vllm/
+→ implementuj TranslationBackend
+→ zadeklaruj capabilities/config
+→ zarejestruj backend
+→ test kontraktowy
+→ gotowe.
+
+Bez modyfikacji:
+DocumentProcessor,
+Filter Engine,
+ChunkPlanner,
+TranslationOrchestrator,
+TranslationExecutor
+i writerów.
+
+To jest główny cel tego refaktoru.

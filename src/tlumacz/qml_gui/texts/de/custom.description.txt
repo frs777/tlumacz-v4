@@ -1,0 +1,20 @@
+Eigener Server verbindet einen externen Übersetzungsserver, der die erforderliche OpenAI-kompatible Schnittstelle bereitstellt. Die Anwendung sendet die Übersetzungsanfrage über den konfigurierten Endpoint; der Server muss das benötigte Modell bereitstellen und die verwendete API-Schnittstelle unterstützen.
+
+Konfiguration:
+1. Einen Server mit OpenAI-Chat-Completions-Kompatibilität starten, z. B. vLLM oder Text Generation Inference, oder einen externen Dienst mit derselben Schnittstelle verwenden.
+2. Die Base-URL des Servers eintragen, z. B. http://127.0.0.1:8000/v1 für einen lokalen vLLM-Endpoint.
+3. Falls der Server eine Authentifizierung verlangt, den API-Schlüssel eintragen. Den Schlüssel nicht in Dokumentation, Prompts oder Projektdateien speichern.
+4. Den Modellnamen genau so eintragen, wie ihn der Server bereitstellt.
+5. Konfiguration speichern und eine Testübersetzung mit einem kurzen Dokument durchführen.
+
+Beispiel 1 — vLLM:
+Base URL: http://127.0.0.1:8000/v1
+Modell: vom vLLM-Server bereitgestellter Modellname
+API-Schlüssel: gemäß Serverkonfiguration, falls erforderlich
+
+Beispiel 2 — externer OpenAI-kompatibler Server:
+Base URL: https://your-server.example/v1
+Modell: vom Server bereitgestelltes Modell
+API-Schlüssel: vom Dienst geforderter Schlüssel
+
+Der benutzerdefinierte Backend-Eintrag startet oder verwaltet den externen Server nicht. Für Start und Verfügbarkeit des Dienstes, Endpoint, Modell, Authentifizierung, Limits und API-Kompatibilität ist der Benutzer verantwortlich. Nicht jeder HTTP-Server ist automatisch mit diesem Vertrag kompatibel; die OpenAI-Kompatibilität muss aus der Dokumentation oder Konfiguration des konkreten Dienstes hervorgehen.

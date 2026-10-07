@@ -1,0 +1,49 @@
+{
+  "parallel": 4,
+  "run": 2,
+  "wall_s": 326.81578913200065,
+  "chunks": [
+    {
+      "chunk": 1,
+      "chars": 1962,
+      "pp": 738,
+      "tg": 634,
+      "time_s": 275.41833137399954,
+      "finish_reason": "stop"
+    },
+    {
+      "chunk": 2,
+      "chars": 1974,
+      "pp": 729,
+      "tg": 628,
+      "time_s": 273.5416962099989,
+      "finish_reason": "stop"
+    },
+    {
+      "chunk": 3,
+      "chars": 1716,
+      "pp": 673,
+      "tg": 524,
+      "time_s": 233.92494835300022,
+      "finish_reason": "stop"
+    },
+    {
+      "chunk": 4,
+      "chars": 1965,
+      "pp": 738,
+      "tg": 635,
+      "time_s": 275.7036202559975,
+      "finish_reason": "stop"
+    },
+    {
+      "chunk": 5,
+      "chars": 1525,
+      "pp": 634,
+      "tg": 458,
+      "time_s": 92.80453929899522,
+      "finish_reason": "stop"
+    }
+  ],
+  "source_chars": 9147,
+  "output_chars": 9758
+}

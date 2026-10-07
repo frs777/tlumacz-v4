@@ -1,0 +1,6 @@
+format = "tlumacz-doc-index"
+schema_version = 1
+project = "agent-translator-v3"
+status = "historical"
+source = "/home/frs/Projekty/agent-translator-v3/docs/INDEX.yml"
+note = "Historyczny punkt odniesienia migracji V3 -> V4."

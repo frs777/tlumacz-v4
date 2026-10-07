@@ -1,0 +1,7 @@
+Apertium jest lokalnym backendem regułowym. Tłumaczenie nie korzysta z modelu LLM, lecz z danych językowych i reguł przetwarzania.
+
+Najważniejsze ograniczenie Apertium wynika z par językowych: tłumaczenie jest możliwe tylko wtedy, gdy w aktywnym runtime są dostępne wymagane dane dla konkretnego kierunku źródło → cel. Para nie jest tym samym co ogólna lista obsługiwanych języków. Przykładowo pakiet może udostępniać kierunki eng-pol i pol-eng, ale dostępność jednego kierunku nie powinna być zakładana bez sprawdzenia runtime.
+
+Źródło i cel są więc związane z konkretną parą. Brak zainstalowanej lub gotowej pary, brak wymaganych artefaktów danych albo niekompletne dane oznaczają, że danego kierunku nie można użyć. Same pliki źródłowe pakietu językowego nie są dowodem, że para jest gotowa do tłumaczenia.
+
+Pary językowe mają również własne zależności i licencje. Nie należy zakładać, że każda para Apertium ma taki sam status, kompletność ani warunki dystrybucji. Apertium sprawdza dostępność konkretnego kierunku przed wykonaniem tłumaczenia.

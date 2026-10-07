@@ -1,0 +1,3 @@
+Programm zum Übersetzen von Dokumenten mit einer grafischen Qt-Oberfläche.
+
+Unterstützt llama.cpp, Cloud und Apertium.

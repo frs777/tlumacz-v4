@@ -1,0 +1,92 @@
+{
+  "cloud_models": [
+    {
+      "name": "Cohere",
+      "provider": "openai",
+      "base_url": "https://api.cohere.ai/compatibility/v1",
+      "model": "command-a-plus-05-2026",
+      "description": "Cohere Compatibility API zgodne z OpenAI"
+    },
+    {
+      "name": "ChatGPT",
+      "provider": "openai",
+      "base_url": "https://api.openai.com/v1",
+      "model": "chat-latest",
+      "description": "OpenAI ChatGPT API"
+    },
+    {
+      "name": "Codex",
+      "provider": "openai",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-5.3-codex",
+      "description": "OpenAI Codex API"
+    },
+    {
+      "name": "Gemini Flash",
+      "provider": "openai",
+      "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
+      "model": "gemini-3.5-flash",
+      "description": "Google Gemini Flash przez API zgodne z OpenAI"
+    },
+    {
+      "name": "Gemini Flash Lite",
+      "provider": "openai",
+      "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
+      "model": "gemini-3.5-flash-lite",
+      "description": "Google Gemini Flash Lite przez API zgodne z OpenAI"
+    },
+    {
+      "name": "DeepSeek",
+      "provider": "openai",
+      "base_url": "https://api.deepseek.com",
+      "model": "deepseek-flash",
+      "description": "DeepSeek API zgodne z OpenAI"
+    },
+    {
+      "name": "DLX",
+      "provider": "dlx",
+      "base_url": "https://oneshot-free.www.deepl.com/v1/translate",
+      "api_key": "",
+      "description": "Nieudokumentowany endpoint OneShot; profil klienta DeepL iOS, bez klucza API"
+    },
+    {
+      "name": "DeepL API Free",
+      "provider": "deepl",
+      "base_url": "https://api-free.deepl.com/v2/translate",
+      "description": "Oficjalne DeepL API Free; wymaga klucza API"
+    },
+    {
+      "name": "LibreTranslate",
+      "provider": "libretranslate",
+      "base_url": "https://libretranslate.com",
+      "description": "REST API LibreTranslate"
+    },
+    {
+      "name": "SimplyTranslate",
+      "provider": "simplytranslate",
+      "engine": "google",
+      "base_url": "https://api.simplytranslate.ai/translate",
+      "description": "SimplyTranslate AI REST API; bezpłatne API bez klucza"
+    },
+    {
+      "name": "MyMemory",
+      "provider": "mymemory",
+      "base_url": "https://api.mymemory.translated.net/get",
+      "description": "Publiczne API MyMemory"
+    },
+    {
+      "name": "Microsoft Translator",
+      "provider": "microsoft",
+      "base_url": "https://api.cognitive.microsofttranslator.com",
+      "description": "Microsoft Translator Text API; wymaga klucza API"
+    },
+    {
+      "name": "Mozhi",
+      "provider": "mozhi",
+      "base_url": "https://mozhi.ducks.party",
+      "engine": "duckduckgo",
+      "mozhi_instance": "auto",
+      "description": "Publiczna instancja Mozhi"
+    }
+  ]
+}

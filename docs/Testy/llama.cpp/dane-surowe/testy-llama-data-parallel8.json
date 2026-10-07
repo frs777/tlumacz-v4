@@ -1,0 +1,72 @@
+{
+  "date": "2026-09-23",
+  "test": 4,
+  "parallel": 8,
+  "model": "$HOME/Modele/translategemma-4b-it.Q5_K_M.gguf",
+  "ctx": 8192,
+  "threads": 4,
+  "threads_batch": 4,
+  "temperature": 0.0,
+  "chunk_size": 2000,
+  "source_chars": 9147,
+  "output_chars": 5474,
+  "chunks": [
+    {
+      "chunk": 1,
+      "pp": 738,
+      "tg": 390,
+      "server_time_s": 250.977,
+      "tg_tps": 3.45,
+      "truncated": true
+    },
+    {
+      "chunk": 2,
+      "pp": 729,
+      "tg": 295,
+      "server_time_s": 228.579,
+      "tg_tps": 3.1,
+      "truncated": true
+    },
+    {
+      "chunk": 3,
+      "pp": 673,
+      "tg": 351,
+      "server_time_s": 239.355,
+      "tg_tps": 3.31,
+      "truncated": true
+    },
+    {
+      "chunk": 4,
+      "pp": 738,
+      "tg": 286,
+      "server_time_s": 224.93,
+      "tg_tps": 3.12,
+      "truncated": true
+    },
+    {
+      "chunk": 5,
+      "pp": 634,
+      "tg": 286,
+      "server_time_s": 224.93,
+      "tg_tps": 3.12,
+      "truncated": true
+    }
+  ],
+  "pp_total": 3512,
+  "tg_total": 1608,
+  "wall_time_s": 253.81,
+  "pp_tps_benchmark": 13.84,
+  "tg_tps_wall": 6.33,
+  "source_chars_per_s": 36.04,
+  "output_chars_per_s": 21.57,
+  "speedup_vs_parallel1": 2.63,
+  "time_reduction_percent": 61.94,
+  "ctx_per_slot": 1024,
+  "complete": false,
+  "nonempty_lines_source": 70,
+  "nonempty_lines_output": 41,
+  "bullets_source": 20,
+  "bullets_output": 4,
+  "truncated_requests": 5,
+  "quality": "NIEZALICZONY — obcięcie przez limit kontekstu"
+}

@@ -1,0 +1,20 @@
+Własny służy do podłączenia zewnętrznego serwera tłumaczeń zgodnego z wymaganym interfejsem OpenAI-compatible. Aplikacja przekazuje do niego żądanie tłumaczenia przez konfigurację endpointu; serwer musi sam udostępniać wymagany model i obsługiwać używany interfejs API.
+
+Jak skonfigurować:
+1. Uruchom własny serwer zgodny z OpenAI Chat Completions API, np. vLLM albo Text Generation Inference, lub użyj zewnętrznej usługi zgodnej z tym interfejsem.
+2. W polu adresu serwera podaj Base URL zgodny z konfiguracją serwera, np. http://127.0.0.1:8000/v1 dla lokalnego endpointu vLLM.
+3. Jeżeli serwer wymaga uwierzytelnienia, podaj jego klucz API. Nie wpisuj klucza do dokumentacji, promptu ani plików projektu.
+4. Podaj nazwę modelu dokładnie tak, jak serwer ją udostępnia.
+5. Zapisz konfigurację i wykonaj tłumaczenie testowe na krótkim dokumencie.
+
+Przykład 1 — vLLM:
+Base URL: http://127.0.0.1:8000/v1
+Model: nazwa-modelu-z-vllm
+Klucz API: zgodny z konfiguracją serwera, jeżeli wymagany
+
+Przykład 2 — zewnętrzny serwer OpenAI-compatible:
+Base URL: https://twoj-serwer.example/v1
+Model: model-udostępniony-przez-serwer
+Klucz API: klucz wymagany przez usługę
+
+Własny nie uruchamia ani nie zarządza tym serwerem. Odpowiedzialność za uruchomienie usługi, dostępność endpointu, model, autoryzację, limity i zgodność API pozostaje po stronie użytkownika. Nie każdy serwer HTTP jest automatycznie zgodny z tym kontraktem; zgodność z OpenAI API musi wynikać z dokumentacji lub konfiguracji konkretnej usługi.

@@ -1,0 +1,7 @@
+version=Apertium 3.9.12
+platform=x86_64-Linux
+built_at=2026-09-27T18:18:37Z
+files=86
+size=74M
+sha256_launcher=9104b4eacfb0f36e96701ebc498d2bde1caea82f743ddc9ae67b72dac0ac5be2
+sha256_core=70a49482e168f1c82fd9121733ce179f47a51476f4f213729103799f727e71d7

@@ -1,0 +1,93 @@
+{
+  "version": "0.4.0",
+  "timestamp": "2026-09-26 01:41:32Z",
+  "latency_mode": "generation",
+  "latency_ms": 919.2897186536962,
+  "model": "translategemma-4b-it.Q5_K_M.gguf",
+  "prefix_caching_enabled": false,
+  "max_concurrency": 1,
+  "benchmarks": [
+    {
+      "concurrency": 1,
+      "context_size": 0,
+      "prompt_size": 512,
+      "response_size": 128,
+      "is_context_prefill_phase": false,
+      "pp_throughput": {
+        "mean": 7.257875028038438,
+        "std": 0.296816094457546,
+        "values": [
+          6.961058933580891,
+          7.554691122495983
+        ]
+      },
+      "pp_req_throughput": {
+        "mean": 7.257875028038438,
+        "std": 0.296816094457546,
+        "values": [
+          6.961058933580891,
+          7.554691122495983
+        ]
+      },
+      "tg_throughput": {
+        "mean": 5.741209194767547,
+        "std": 0.7150416271504092,
+        "values": [
+          5.026167567617138,
+          6.456250821917957
+        ]
+      },
+      "tg_req_throughput": {
+        "mean": 5.741209194767547,
+        "std": 0.7150416271504092,
+        "values": [
+          5.026167567617138,
+          6.456250821917957
+        ]
+      },
+      "peak_throughput": {
+        "mean": 6.5,
+        "std": 0.5,
+        "values": [
+          6.0,
+          7.0
+        ]
+      },
+      "peak_req_throughput": {
+        "mean": 6.5,
+        "std": 0.5,
+        "values": [
+          6.0,
+          7.0
+        ]
+      },
+      "ttfr": {
+        "mean": 65110.20349065075,
+        "std": 2861.070307294549,
+        "values": [
+          63042.28636197513,
+          69156.03423299035,
+          63132.28987698676
+        ]
+      },
+      "est_ppt": {
+        "mean": 65224.872336334854,
+        "std": 3011.8721780017913,
+        "values": [
+          68236.74451433665,
+          62213.00015833307
+        ]
+      },
+      "e2e_ttft": {
+        "mean": 66144.16205498856,
+        "std": 3011.872178001795,
+        "values": [
+          69156.03423299035,
+          63132.28987698676
+        ]
+      },
+      "throughput_over_time": null,
+      "requests_throughput_over_time": null
+    }
+  ]
+}

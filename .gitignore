@@ -1,0 +1,119 @@
+# Tłumacz V4 — granica publicznego repozytorium GitHub
+
+# Środowiska i artefakty Pythona
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.coverage
+coverage.xml
+htmlcov/
+
+# Build / dystrybucja lokalna
+build/
+dist/
+dist-ci/
+*.whl
+*.wheel
+*.manifest
+*.spec
+.installed.cfg
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+wheels/
+pip-wheel-metadata/
+
+# Lokalne środowiska / konfiguracja / sekrety
+.env
+.env.*
+!.env.example
+*.local.json
+config.local.json
+*.key
+*.keys
+*.pem
+*.p12
+*.pfx
+*.token
+*.secret
+*.secrets
+
+# Lokalne dane i cache
+*.db
+*.sqlite
+*.sqlite3
+translation-cache/
+temp/
+backups/
+.backup/
+.backups/
+.migration-backups/
+.mimocode/
+glosariusze/
+Modele/
+models/
+*.gguf
+
+# Edytory / system
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.#*
+
+# Stan lokalnych agentów / automatyzacji
+.agents/
+.claude/
+.codex/
+.tree-ring/
+.mcp/
+
+# Testowe i prywatne materiały użytkownika
+pliki testowe/
+Skille użytkownika/
+
+# Lokalne / legacy implementacje poza publiczną granicą
+Aperitium/
+filtry/
+filtry-python/
+pary/
+tools/
+java/filter-host/
+
+# Lokalne kopie i artefakty SentinelX
+*.bak
+*.bak.*
+*.backup
+*.pre_*
+*.post_*
+
+# Lokalny metadata/build state
+src/tlumacz.egg-info/
+
+# Narzędzia / raporty lokalne
+.coverage
+*.log
+*.tmp
+*.temp
+*.lock

@@ -1,0 +1,7 @@
+Mozhi “auto” automatically searches for the best available instance for the selected engine.
+
+The mechanism checks known instances in parallel. For each instance it verifies API availability, the selected engine, and source languages, then performs a control translation and measures response time. Only instances that pass the required checks and return a valid, non-empty response remain candidates.
+
+The fastest responding valid instance is selected. If no instance meets the conditions within the time limit, the default fallback instance is used. A manually selected instance bypasses automatic selection.
+
+The checks performed by “auto” are used only to select an instance and do not replace the actual document translation.

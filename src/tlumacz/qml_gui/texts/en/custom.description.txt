@@ -1,0 +1,20 @@
+Custom connects an external translation server that implements the required OpenAI-compatible interface. The application sends the translation request through the configured endpoint; the server must provide the required model and support the API interface being used.
+
+How to configure:
+1. Run a server compatible with the OpenAI Chat Completions API, such as vLLM or Text Generation Inference, or use an external service with the same interface.
+2. Enter the server Base URL, for example http://127.0.0.1:8000/v1 for a local vLLM endpoint.
+3. If the server requires authentication, enter its API key. Do not put the key in documentation, prompts, or project files.
+4. Enter the model name exactly as exposed by the server.
+5. Save the configuration and perform a test translation with a short document.
+
+Example 1 — vLLM:
+Base URL: http://127.0.0.1:8000/v1
+Model: model-name-exposed-by-vllm
+API key: according to the server configuration, if required
+
+Example 2 — external OpenAI-compatible server:
+Base URL: https://your-server.example/v1
+Model: model-exposed-by-the-server
+API key: key required by the service
+
+Custom does not start or manage the external server. The user is responsible for starting the service, endpoint availability, model, authentication, limits, and API compatibility. Not every HTTP server is automatically compatible with this contract; compatibility with the OpenAI API must be confirmed by the documentation or configuration of the specific service.

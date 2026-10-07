@@ -1,0 +1,93 @@
+{
+  "version": "0.4.0",
+  "timestamp": "2026-09-26 10:42:09Z",
+  "latency_mode": "generation",
+  "latency_ms": 372.4167336865018,
+  "model": "translategemma-4b-it.Q5_K_M.gguf",
+  "prefix_caching_enabled": false,
+  "max_concurrency": 1,
+  "benchmarks": [
+    {
+      "concurrency": 1,
+      "context_size": 0,
+      "prompt_size": 512,
+      "response_size": 128,
+      "is_context_prefill_phase": false,
+      "pp_throughput": {
+        "mean": 38.775538796020136,
+        "std": 1.4959874030446727,
+        "values": [
+          37.27955139297546,
+          40.27152619906481
+        ]
+      },
+      "pp_req_throughput": {
+        "mean": 38.775538796020136,
+        "std": 1.4959874030446727,
+        "values": [
+          37.27955139297546,
+          40.27152619906481
+        ]
+      },
+      "tg_throughput": {
+        "mean": 6.66873157639631,
+        "std": 0.7030872244809494,
+        "values": [
+          5.965644351915361,
+          7.37181880087726
+        ]
+      },
+      "tg_req_throughput": {
+        "mean": 6.66873157639631,
+        "std": 0.7030872244809494,
+        "values": [
+          5.965644351915361,
+          7.37181880087726
+        ]
+      },
+      "peak_throughput": {
+        "mean": 7.0,
+        "std": 1.0,
+        "values": [
+          6.0,
+          8.0
+        ]
+      },
+      "peak_req_throughput": {
+        "mean": 7.0,
+        "std": 1.0,
+        "values": [
+          6.0,
+          8.0
+        ]
+      },
+      "ttfr": {
+        "mean": 12785.634209324295,
+        "std": 556.3018036630124,
+        "values": [
+          13382.229938986711,
+          12931.478997983504,
+          12043.19369100267
+        ]
+      },
+      "est_ppt": {
+        "mean": 12340.29508130819,
+        "std": 669.5181239920203,
+        "values": [
+          13009.81320530021,
+          11670.77695731617
+        ]
+      },
+      "e2e_ttft": {
+        "mean": 12712.711814994691,
+        "std": 669.5181239920203,
+        "values": [
+          13382.229938986711,
+          12043.19369100267
+        ]
+      },
+      "throughput_over_time": null,
+      "requests_throughput_over_time": null
+    }
+  ]
+}

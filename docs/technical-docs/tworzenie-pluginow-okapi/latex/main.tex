@@ -1,0 +1,55 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usetikzlibrary{arrows.meta,positioning}
+\geometry{margin=2.2cm}
+\title{Tłumacz V4 — przepływ dokumentu, Okapi i Filter Engine}
+\author{Dokumentacja projektu}
+\date{2026-10-08}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Model procesu}
+Rysunek \ref{fig:main} pokazuje model potwierdzony przez aktualny kod. Numery etapów odpowiadają rozdziałom dokumentacji Markdown.
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[node distance=8mm and 6mm,box/.style={draw,rounded corners,align=center,minimum width=29mm,minimum height=9mm},arrow/.style={-{Latex},thick}]
+\node[box] (a) {1. Wejście / format};
+\node[box,right=of a] (b) {2. FilterRegistry / sesja};
+\node[box,right=of b] (c) {3. extract() / jednostki};
+\node[box,right=of c] (d) {4. Preprocessor / TRANSLATE-KEEP};
+\node[box,below=of d] (e) {5. ChunkPlanner / chunki};
+\node[box,left=of e] (f) {6. Orchestrator};
+\node[box,left=of f] (g) {7. Executor / równoległość};
+\node[box,left=of g] (h) {8. Backend MT};
+\node[box,below=of h] (i) {9. Walidacja};
+\node[box,right=of i] (j) {10. Writer / rekonstrukcja};
+\draw[arrow] (a)--(b)--(c)--(d)--(e)--(f)--(g)--(h)--(i)--(j);
+\node[box,below=of b] (t) {TXT: PlainTextFilter};
+\draw[arrow,dashed] (a.south) |- (t.west);
+\node[box,below=of c] (o) {Okapi: struktura / inline codes};
+\draw[arrow,dashed] (o.north) -- (c.south);
+\node[box,below=of f] (l) {Lingua: TranslateGemma};
+\draw[arrow,dashed] (f.south) -- (l.north);
+\node[box,below=of j] (p) {PDF: osobna ścieżka};
+\draw[arrow,dashed] (a.south) |- (p.west);
+\draw[arrow,dashed] (p.north) |- (j.south);
+\end{tikzpicture}
+\caption{Główny przepływ dokumentowy. Numery odnoszą się do rozdziałów Markdown.}
+\label{fig:main}
+\end{figure}
+\section{Odniesienia}
+\begin{itemize}
+\item Etapy 1–3: 02-wejscie-formaty.md i 03-filter-engine-okapi.md.
+\item Etap 4: 04-preprocessing.md.
+\item Etapy 5–7: 05-chunkowanie-i-rownoleglosc.md.
+\item Detekcja: 06-detekcja-jezyka.md.
+\item Apertium i markery: 07-apertium-inline.md.
+\item Etapy 9–10: 08-rekonstrukcja-walidacja.md.
+\end{itemize}
+\end{document}

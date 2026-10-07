@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE documentInfo>
+<documentInfo>
+ <pageList>
+  <page number="0">
+   <annotationList>
+    <annotation type="4">
+     <base author="Artur Pawlowski" color="#ffffff00" contents="Kwantyzacja KV Cache" creationDate="2026-09-22T16:18:50" modifyDate="2026-09-22T16:18:50" uniqueName="okular-{0aaafe22-6fdb-4f0d-a4c3-f1ddd47e1d96}">
+      <boundary b="0.494692" l="0.0858491" r="0.312264" t="0.473461"/>
+     </base>
+     <hl>
+      <quad ax="0.0863477" ay="0.494746" bx="0.312719" by="0.494746" cx="0.312719" cy="0.47373" dx="0.0863477" dy="0.47373" feather="1"/>
+     </hl>
+    </annotation>
+   </annotationList>
+  </page>
+  <page number="3">
+   <annotationList>
+    <annotation type="4">
+     <base author="Artur Pawlowski" color="#ffffff00" contents="GBNF" creationDate="2026-09-22T16:17:52" modifyDate="2026-09-22T16:17:52" uniqueName="okular-{06736da7-f7e4-4163-8273-882bd3b6b6fa}">
+      <boundary b="0.929936" l="0.0915094" r="0.167925" t="0.90092"/>
+     </base>
+     <hl>
+      <quad ax="0.092182" ay="0.929947" bx="0.168028" by="0.929947" cx="0.168028" cy="0.901051" dx="0.092182" dy="0.901051" feather="1"/>
+     </hl>
+    </annotation>
+   </annotationList>
+  </page>
+  <page number="5">
+   <annotationList>
+    <annotation type="4">
+     <base author="Artur Pawlowski" color="#ffffff00" contents=". Translate Toolkit" creationDate="2026-09-22T16:17:36" modifyDate="2026-09-22T16:17:36" uniqueName="okular-{f6d17178-bf79-40ad-adf4-1e6f86819b61}">
+      <boundary b="0.775655" l="0.0764151" r="0.323585" t="0.719745"/>
+     </base>
+     <hl>
+      <quad ax="0.0770128" ay="0.775832" bx="0.324387" by="0.775832" cx="0.324387" cy="0.71979" dx="0.0770128" dy="0.71979" feather="1"/>
+     </hl>
+    </annotation>
+   </annotationList>
+  </page>
+  <page number="11">
+   <annotationList>
+    <annotation type="4">
+     <base author="Artur Pawlowski" color="#ffffff00" contents="Benchmarking" creationDate="2026-09-22T16:22:19" modifyDate="2026-09-22T16:22:19" uniqueName="okular-{96078ade-b1ea-4c73-a54c-14229f05f8f1}">
+      <boundary b="0.869073" l="0.0915094" r="0.299057" t="0.840057"/>
+     </base>
+     <hl>
+      <quad ax="0.092182" ay="0.869527" bx="0.299883" by="0.869527" cx="0.299883" cy="0.84063" dx="0.092182" dy="0.84063" feather="1"/>
+     </hl>
+    </annotation>
+    <annotation type="4">
+     <base author="Artur Pawlowski" color="#ffffff00" contents="llama-bench" creationDate="2026-09-22T16:22:32" modifyDate="2026-09-22T16:22:32" uniqueName="okular-{38af71fd-ed81-4971-a9a5-5cd5fa125bc8}">
+      <boundary b="0.947629" l="0.0971698" r="0.222642" t="0.927105"/>
+     </base>
+     <hl>
+      <quad ax="0.0980163" ay="0.948336" bx="0.22287" by="0.948336" cx="0.22287" cy="0.92732" dx="0.0980163" dy="0.92732" feather="1"/>
+     </hl>
+    </annotation>
+   </annotationList>
+  </page>
+  <page number="12">
+   <annotationList>
+    <annotation type="4">
+     <base author="Artur Pawlowski" color="#ffffff00" contents="llama-optimus" creationDate="2026-09-22T16:22:36" modifyDate="2026-09-22T16:22:36" uniqueName="okular-{537070d0-a0a0-4da2-8fcd-3978457d010c}">
+      <boundary b="0.104742" l="0.0971698" r="0.24434" t="0.0828025"/>
+     </base>
+     <hl>
+      <quad ax="0.0980163" ay="0.105079" bx="0.245041" by="0.105079" cx="0.245041" cy="0.0831874" dx="0.0980163" dy="0.0831874" feather="1"/>
+     </hl>
+    </annotation>
+    <annotation type="4">
+     <base author="Artur Pawlowski" color="#ffffff00" contents="ik_llama.cpp" creationDate="2026-09-22T16:23:10" modifyDate="2026-09-22T16:23:10" uniqueName="okular-{97ada986-327a-4550-9ccf-2ee79888ab52}">
+      <boundary b="0.351734" l="0.045283" r="0.170755" t="0.329795"/>
+     </base>
+     <hl>
+      <quad ax="0.0455076" ay="0.352014" bx="0.171529" by="0.352014" cx="0.171529" cy="0.330123" dx="0.0455076" dy="0.330123" feather="1"/>
+     </hl>
+    </annotation>
+    <annotation type="4">
+     <base author="Artur Pawlowski" color="#ffffff00" contents="AVX2" creationDate="2026-09-22T16:23:15" modifyDate="2026-09-22T16:23:15" uniqueName="okular-{e8d60b10-fc9c-40b7-973e-0ca25af75f3e}">
+      <boundary b="0.374381" l="0.269811" r="0.301887" t="0.360226"/>
+     </base>
+     <hl>
+      <quad ax="0.270712" ay="0.374781" bx="0.302217" by="0.374781" cx="0.302217" cy="0.360771" dx="0.270712" dy="0.360771" feather="1"/>
+     </hl>
+    </annotation>
+   </annotationList>
+  </page>
+ </pageList>
+</documentInfo>

@@ -1,0 +1,82 @@
+{
+  "model": "translategemma-4b-it.Q5_K_M.gguf",
+  "parallel": 1,
+  "threads": 4,
+  "threads_batch": 4,
+  "ctx": 8192,
+  "chunk_size": 2000,
+  "source_chars": 9147,
+  "chunks": [
+    {
+      "input_chars": 1962,
+      "output_chars": 2072,
+      "pp": 738,
+      "tg": 632,
+      "total_tokens": 1370,
+      "time_s": 150.90881308000098,
+      "pp_tok_s": 4.890370449131858,
+      "tg_tok_s": 4.187959517413732,
+      "source_chars_s": 13.001228755009086,
+      "output_chars_s": 13.730145759622236,
+      "output": "﻿Krótkie Poradniki, Jak Uczynić Zwykły Tydzień Lepszym\n\nProste pomysły, szczere błędy i kilka rzeczy, które warto wypróbować\nWstęp\nWiększość tygodni nie jest dramatyczna. Są mieszanką pracy, spraw, wiadomości, posiłków, drobnych problemów i momentów, które łatwo zapomnieć. Nie oznacza to, że są nudne. W rzeczywistości, zwykły tydzień może nam wiele powiedzieć o tym, jak żyjemy. Kluczem jest zauważenie, co działa, co utrudnia, i co możemy zmienić, nie zamieniając życia w ogromny projekt.\nTen mały poradnik napisany jest prostym, codziennym językiem. Nie jest to podręcznik od eksperta, ani lista zasad. Traktuj go jako przyjazną kolekcję obserwacji. Niektóre pomysły mogą idealnie pasować do Ciebie, inne mogą wydawać się całkowicie zbędne. To w porządku. Weź to, co jest przydatne, a resztę zostaw.\n1. Zacznij od Jednej Małej Rzeczy\nKiedy ludzie chcą coś poprawić, często próbują zmienić wszystko naraz. Nowa rutyna, nowa dieta, nowy kalendarz, nowe cele, nowa aplikacja – nagle środa staje się pełnym wymiarem. Mniejszy, bardziej stopniowy, jest zazwyczaj łatwiejszy do zaakceptowania. Wybierz jedną rzecz, która zajmuje pięć lub dziesięć minut, i rób to regularnie.\nNa przykład, możesz posprzątać stół w kuchni przed snem, zapisać trzy najważniejsze zadania na jutro, lub zrobić krótki spacer po obiedzie. Żaden z tych pomysłów nie jest ekscytujący. W rzeczywistości, to jest właśnie punkt. Nawyk nie musi wyglądać imponująco, aby być przydatny.\n    • Umieszczaj klucze i słuchawki w tym samym miejscu każdego dnia.\n    • Zapisuj ważne myśli zamiast polegać na pamięci.\n    • Zostawaj trochę wolnego miejsca między dwoma intensywnymi planami.\n    • Jeśli zadanie zajmuje dwie minuty, rozważ wykonanie go od razu.\n    • Zarezerwuj jeden wieczór na nieplanowane zajęcia.\n2. Zrób Miejsce na Rzeczywiste Rozmowy\nWiadomości są wygodne, ale mogą sprawić, że komunikacja stanie się dziwnie płaska. Krótki tekst może ukryć ton, wahanie, lub fakt, że ktoś ma trudny dzień. Czasami pięciominutowa rozmowa mówi więcej niż dwadzieścia wiadomości wysłanych w ciągu dwóch godzin."
+    },
+    {
+      "input_chars": 1974,
+      "output_chars": 2121,
+      "pp": 729,
+      "tg": 626,
+      "total_tokens": 1355,
+      "time_s": 146.44061071800388,
+      "pp_tok_s": 4.978127286042343,
+      "tg_tok_s": 4.274770481567225,
+      "source_chars_s": 13.479867301299844,
+      "output_chars_s": 14.48368720671579,
+      "output": "To nie oznacza, że każda rozmowa musi stać się głęboka i emocjonalna. Wręcz przeciwnie. Rozmawiaj o obiedzie, o śmiesznym rzeczy, którą widziałeś, o problemie w pracy, o filmie, który Ci się podobał, lub o planie na weekend. Proste rozmowy są ważne, ponieważ utrzymują relacje między ważnymi momentami.\nPrzydatna zasada: jeśli wiadomość staje się dłuższa i bardziej skomplikowana niż sama rozmowa, po prostu zadzwoń. Możesz zaoszczędzić czas, uniknąć zamieszania i mieć przyjemniejszą interakcję.\n3. Tabela Małych Wyborów\nSytuacja\nBusy morning\nZbyt wiele zadań\nNiski poziom energii\nNieporządkowany biurko\nWolny wieczór\nTabela nie jest formułą. Jest to po prostu przypomnienie, że małe wybory mogą zmienić przebieg dnia. Czasami najlepszą decyzją nie jest najbardziej ambitna. To ta, którą możesz faktycznie podjąć, kiedy jesteś zmęczony, rozproszony lub spóźniony.\n4. Nie ufaj Każdemu Skrótowi\nSkróty mogą być przydatne. Mogą również powodować dodatkową pracę w przyszłości. Szybka odpowiedź, zapomniana notatka lub plik zapisany z bezużyteczną nazwą mogą wydawać się niewinne w danym momencie. Po tygodniu możesz spędzić dwadzieścia minut próbując przypomnieć sobie, co miałeś na myśli.\nIstnieje tu zabawny balans: bycie ostrożnym we wszystkim byłoby męczące, ale bycie nieostrożnym we wszystkim jest równie męczące. Środkiem jest spowolnienie dla kilku rzeczy, które prawdopodobnie będą miały znaczenie później. Nadaj ważnemu dokumentowi jasną nazwę. Sprawdź adres przed wysłaniem czegoś. Przeczytaj wiadomość raz przed naciśnięciem \"wysłać\", gdy temat jest delikatny.\n5. Technologia Ma Służyć Dni\nTelefony i komputery są niezwykle przydatne, ale również bardzo dobrze nadają się do wypełniania każdego wolnego momentu. Krótka sprawa może stać się dziesięć minut, a dziesięć minut może stać się godziną spędzoną na przeskakiwaniu między niezwiązanymi rzeczami. Nie musisz pozbywać się swoich urządzeń. Kilka prostych zasad może wystarczyć.\n• Wyłącz powiadomienia, których naprawdę nie potrzebujesz.\n• Trzymaj rozpraszające aplikacje z dala od pierwszego ekranu.\n• Używaj timera, gdy chcesz skupić się przez krótki czas."
+    },
+    {
+      "input_chars": 1716,
+      "output_chars": 1775,
+      "pp": 673,
+      "tg": 525,
+      "total_tokens": 1198,
+      "time_s": 128.76756529499835,
+      "pp_tok_s": 5.2264714212635734,
+      "tg_tok_s": 4.077113664432951,
+      "source_chars_s": 13.326337234603702,
+      "output_chars_s": 13.784527151178072,
+      "output": "• Kiedy oglądasz coś lub czytasz, spróbuj skupić się tylko na tym przez jakiś czas.\nCel nie jest idealną koncentracją. Nikt jej nie ma. Cel to ułatwienie zauważenia, kiedy uwaga rozproszona, i podjęcie decyzji, czy naprawdę chce się na nią zwrócić.\n6. Ucz się na małych błędach\nKażdy zapomina rzeczy, źle rozumie ludzi, kupuje niepotrzebne rzeczy, przegapi termin, lub zaczyna projekt z nadmiernym przekonaniem. Błędy stają się bardziej przydatne, gdy patrzymy na nie bez tworzenia wielkiej historii o sobie.\nZamiast pytać „Dlaczego jestem taki?”, zapytaj mniejsze pytanie: „Co się stało, i co mógłbym zrobić inaczej następnym razem?”. Może przypomnienie powinno być wcześniejsze. Może instrukcje musiały być bardziej jasne. Może plan był po prostu zbyt ambitny. Praktyczna odpowiedź jest zazwyczaj bardziej przydatna niż dramatyczna.\nJeden nieporadny moment to informacja, a nie stała tożsamość.\n7. Pozostaw trochę miejsca\nKalendarz wypełniony od rana do wieczora może wyglądać produktywnie, ale nie pozostawia miejsca na opóźnienia, nieoczekiwane rozmowy, zmęczenie, ani po prostu ciekawość. Puste miejsce nie jest automatycznie marnowanym czasem. Może to być część dnia, która pozwala wszystkim innym działaniom.\nSpróbuj zostawić trochę miejsca między wymagającymi zadaniami. Spacer bez słuchania. Siedzenie z kawą. Spoglądanie przez okno. Powolne wykonywanie nudnych obowiązków domowych. Te momenty mogą wydawać się prawie bezcelowe, ale często dają mózgowi szansę na reset.\n8. Kilka pytań, które warto zadać\n• Która część tygodnia była łatwiejsza niż się spodziewałem?\n• Co ciągle odwracało moją uwagę?\n• Które zadanie można było uprościć?\n• Z kim mi się przyjemnie rozmawiało?\n• Co mogę przestać robić?\n• Co sprawi, że jutro będzie nieco łatwiejsze?\nWnioski<|im_start|>"
+    },
+    {
+      "input_chars": 1965,
+      "output_chars": 2176,
+      "pp": 738,
+      "tg": 638,
+      "total_tokens": 1376,
+      "time_s": 143.05097244200442,
+      "pp_tok_s": 5.159000231887268,
+      "tg_tok_s": 4.459948709951324,
+      "source_chars_s": 13.736362406041303,
+      "output_chars_s": 15.211361117326145,
+      "output": "Poprawa zwykłego tygodnia nie wymaga idealnego systemu. Może być tak prosta, jak wybranie jednej małej nawyki, przeprowadzenie jednej prawdziwej rozmowy, pozostawienie trochę wolnego miejsca i zwracanie uwagi na to, co mówi Twój własny doświadczenie. Przydatne zmiany są często subtelne. Nie wymagają głośnego ogłoszenia ani skomplikowanego arkusza kalkulacyjnego.\nWięc, jeśli ten przewodnik ma pozostawić Cię z jedną ideą, to niech będzie ona taka: wprowadzaj zmiany tak, abyś mógł je powtarzać. Zauważ, co się dzieje. Zachowaj te rzeczy, które pomagają. Pozbądź się tych, które nie. Następnie spróbuj ponownie następnego tygodnia.\nKoniec dokumentu\n9. Plany, które przetrwają rzeczywistość\nPlan może wyglądać idealnie na papierze, a jednak zawieść już we środę. Może autobus się spóźni, ktoś zadzwoni, pogoda się zmieni, albo po prostu obudzisz się z mniejszą energią, niż się spodziewałeś. Przydatny plan ma wbudowaną pewną elastyczność. Zamiast decydować, że dzień jest zrujnowany, ponieważ jedna czynność się przesunęła, zdecyduj, jakie jest następne rozsądne działanie. Brzmi to prosto, ale może zaoszczędzić zaskakująco dużo frustracji.\nSpróbuj stworzyć dwie wersje planu: normalną wersję i wersję „na niskiej energii”. Normalna wersja może obejmować przygotowanie kolacji, odpowiadanie na wiadomości, sprzątanie i spacer. Wersja „na niskiej energii” może obejmować zupę, jedną ważną odpowiedź, pięć minut sprzątania i wczesne pójście spać. Obie wersje są poprawne. Druga nie jest porażką, tylko plan zaprojektowany na inny rodzaj dnia.\n10. Zachowaj przydatne elementy\nPo kilku próbach nowego rytuału, poświęć kilka minut na refleksję. Który element faktycznie pomógł? Który element wyglądał dobrze, ale nigdy nie pasował do Twojego życia? Który pomysł był łatwy do powtarzania? Nie potrzebujesz formalnej oceny z wykresami i liczbami. Kilka szczerych notatek wystarczy. Ważne jest, aby zauważyć wzorce, zanim one znikną z pamięci.\nOto kilka przykładów przydatnych notatek:\n• „Wykonuję więcej zadań, kiedy wybieram pierwsze zadanie, zanim otworzę media społecznościowe.”\n• „Przygotowanie posiłków jest łatwiejsze, kiedy decyduję o kolacji, zanim poczuję głód.”<|im_end|>"
+    },
+    {
+      "input_chars": 1525,
+      "output_chars": 1582,
+      "pp": 634,
+      "tg": 456,
+      "total_tokens": 1090,
+      "time_s": 97.72132099200098,
+      "pp_tok_s": 6.487836979320985,
+      "tg_tok_s": 4.666330698060519,
+      "source_chars_s": 15.60560156697871,
+      "output_chars_s": 16.188892904236276,
+      "output": "• „Opóźniam to zadanie, ponieważ pierwszy krok jest niejasny.”\n• „Krótki spacer pomaga mi wrócić do zadania, nie czując się uwięzionym.”\n• „Bardziej lubię weekendy, kiedy zostawiam jeden popołudnie całkowicie wolne.”\nTe obserwacje mogą wydawać się zbyt zwyczajne, aby je zapisać. Dlatego właśnie są cenne. Łatwo zapamiętać duże plany; łatwo pominąć małe wzorce. Notatka sporządzona dzisiaj może stać się przydatnym wskazówką za miesiąc.\n11. Ludzie są częścią planu\nŁatwo zaplanować tydzień, jakbyś był jedyną osobą w nim. Rzeczywisty świat nie działa w ten sposób. Przyjaciele zmieniają plany, członkowie rodziny potrzebują pomocy, współpracownicy zadają pytania, a obcy okazjonalnie otwierają drzwi, gdy masz ręce pełne. Niektóre zakłócenia są uciążliwe; inne są najlepszą częścią dnia. Pozostaw wystarczająco dużo miejsca na oba.\nJeśli ktoś, kogo zależy Ci, powie: „Czy masz pięć minut?”, nie zawsze musisz chronić swój harmonogram jak eksponat w muzeum. Czasami pięć minut staje się dobrą rozmową, śmiechem lub rozwiązaniem małego problemu, zanim on się pogłębi. Oczywiście, granice również mają znaczenie. Bycie dostępnym dla wszystkich na czas nie jest realistyczne. Przydatna umiejętność polega na decydowaniu, kiedy niewielkie zakłócenie jest warte zaakceptowania.\nOstateczne przemyślenie\nZwykły tydzień składa się z setek drobnych decyzji. Większość z nich nigdy nie zostanie zapamiętana samodzielnie. Razem jednak tworzą atmosferę codziennego życia. Nie możesz kontrolować każdej części tej atmosfery, i nie musisz. Możesz po prostu dokonywać kilku wyborów z większą uwagą."
+    }
+  ],
+  "document_time_s": 666.8987914389945,
+  "output_chars": 9726,
+  "tg_total": 2877,
+  "pp_total": 3512,
+  "source_chars_s": 13.71572436090812,
+  "output_chars_s": 14.583922065616308
+}

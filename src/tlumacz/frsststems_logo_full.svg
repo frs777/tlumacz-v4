@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="blue1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1769e0"/>
+      <stop offset="1" stop-color="#2f8cff"/>
+    </linearGradient>
+    <linearGradient id="blue2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#16b5e8"/>
+      <stop offset="1" stop-color="#29a8df"/>
+    </linearGradient>
+    <linearGradient id="blue3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#082f73"/>
+      <stop offset="1" stop-color="#1458b8"/>
+    </linearGradient>
+    <path id="textArc" d="M 170 430 A 345 345 0 0 1 854 430"/>
+  </defs>
+
+  <!-- Białe tło -->
+  <rect width="1024" height="1024" fill="#ffffff"/>
+
+  <!-- Nazwa firmy w półokrągłym łuku -->
+  <text
+    fill="#0a1f3d"
+    font-family="DejaVu Sans, Arial, sans-serif"
+    font-size="92"
+    font-weight="700"
+    letter-spacing="2">
+    <textPath href="#textArc" startOffset="50%" text-anchor="middle">frsststems</textPath>
+  </text>
+
+  <!-- Główne logo, wypełniające kompozycję -->
+  <g transform="translate(185 455)">
+    <!-- górna wstęga -->
+    <path
+      d="M0 190
+         C28 91 112 18 221 0
+         H585
+         C615 0 630 34 611 58
+         L548 137
+         C532 157 506 168 481 168
+         H206
+         C116 168 51 188 0 238
+         Z"
+      fill="url(#blue1)"/>
+
+    <!-- środkowa wstęga -->
+    <path
+      d="M0 285
+         C38 226 104 196 194 196
+         H548
+         C575 196 589 225 573 247
+         L530 307
+         C515 328 490 340 463 340
+         H171
+         C98 340 43 362 0 409
+         Z"
+      fill="url(#blue2)"/>
+
+    <!-- pionowy element / znak w lewym dolnym rogu -->
+    <path
+      d="M0 405
+         H112
+         V585
+         C112 614 95 638 70 654
+         L0 700
+         Z"
+      fill="url(#blue3)"/>
+
+    <!-- subtelne cięcie w pionowym elemencie -->
+    <path
+      d="M0 405 H112 L0 518 Z"
+      fill="#164a93"
+      opacity=".65"/>
+  </g>
+</svg>

@@ -1,0 +1,141 @@
+{
+  "wersja": 2,
+  "opis": "Bezpieczny szablon konfiguracji użytkownika Tłumacza. Klucze API są przechowywane wyłącznie w $HOME/.config/tlumacz/.key.",
+  "aplikacja": {
+    "motyw": "system",
+    "jezyk_docelowy": "wykryj do pl",
+    "temperatura": 0.0
+  },
+  "tlumaczenie": {
+    "rozmiar_bloku": 4000,
+    "sciezka_glosariusza": "",
+    "prompt_systemowy": "",
+    "aktywne_skille": [
+      "Markdown"
+    ],
+    "wzorce_pomijania": [
+      "^\\s*---\\s*$",
+      "^\\s*(name|license|author|metadata|version|tags|created|updated)\\s*:"
+    ]
+  },
+  "backend": {
+    "typ": "llama",
+    "automatyczny_start": true,
+    "czyszczenie_cache_po_tlumaczeniu": true,
+    "restart_po_tlumaczeniu": true
+  },
+  "llama": {
+    "model": "",
+    "szablon_czatu": "",
+    "tryb_obliczen": "gpu",
+    "rownolegle": 1,
+    "host": "127.0.0.1",
+    "port": 8301,
+    "ostatni_adres_api": "http://127.0.0.1:17580/v1",
+    "ostatni_klucz_api": "ollama",
+    "ostatni_model": "local",
+    "profile_modeli": {}
+  },
+  "uslugi_chmurowe": {
+    "aktywna": "Cohere",
+    "adres_api": "https://api.cohere.ai/compatibility/v1",
+    "limit_czasu": 30.0,
+    "provider": "openai",
+    "silnik": "google",
+    "instancja_mozhi": "auto",
+    "silnik_mozhi": "duckduckgo",
+    "modele": [
+      "Cohere",
+      "ChatGPT",
+      "Codex",
+      "Gemini Flash",
+      "Gemini Flash Lite",
+      "DeepSeek",
+      "DeepL API Free",
+      "LibreTranslate",
+      "SimplyTranslate — Google",
+      "SimplyTranslate — LibreTranslate",
+      "SimplyTranslate — ICIBA",
+      "MyMemory",
+      "Microsoft Translator",
+      "Mozhi"
+    ],
+    "profile": {
+      "Cohere": {
+        "provider": "openai",
+        "base_url": "https://api.cohere.ai/compatibility/v1",
+        "model": "command-a-plus-05-2026"
+      },
+      "ChatGPT": {
+        "provider": "openai",
+        "base_url": "https://api.openai.com/v1",
+        "model": "chat-latest"
+      },
+      "Codex": {
+        "provider": "openai",
+        "base_url": "https://api.openai.com/v1",
+        "model": "gpt-5.3-codex"
+      },
+      "Gemini Flash": {
+        "provider": "openai",
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
+        "model": "gemini-3.5-flash"
+      },
+      "Gemini Flash Lite": {
+        "provider": "openai",
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
+        "model": "gemini-3.5-flash-lite"
+      },
+      "DeepSeek": {
+        "provider": "openai",
+        "base_url": "https://api.deepseek.com",
+        "model": "deepseek-flash"
+      },
+      "DeepL API Free": {
+        "provider": "deepl",
+        "base_url": "https://api-free.deepl.com/v2/translate",
+        "model": "DeepL API Free"
+      },
+      "LibreTranslate": {
+        "provider": "libretranslate",
+        "base_url": "https://libretranslate.com",
+        "model": "LibreTranslate"
+      },
+      "SimplyTranslate — Google": {
+        "provider": "simplytranslate",
+        "base_url": "https://simplytranslate.org/api/translate",
+        "engine": "google"
+      },
+      "SimplyTranslate — LibreTranslate": {
+        "provider": "simplytranslate",
+        "base_url": "https://simplytranslate.org/api/translate",
+        "engine": "libre"
+      },
+      "SimplyTranslate — ICIBA": {
+        "provider": "simplytranslate",
+        "base_url": "https://simplytranslate.org/api/translate",
+        "engine": "iciba"
+      },
+      "MyMemory": {
+        "provider": "mymemory",
+        "base_url": "https://api.mymemory.translated.net/get",
+        "engine": "google"
+      },
+      "Microsoft Translator": {
+        "provider": "microsoft",
+        "base_url": "https://api.cognitive.microsofttranslator.com",
+        "engine": "google"
+      },
+      "Mozhi": {
+        "provider": "mozhi",
+        "base_url": "https://mozhi.ducks.party",
+        "engine": "duckduckgo",
+        "mozhi_instance": "auto"
+      }
+    }
+  },
+  "ostatnie_pliki": {
+    "wejscie": "",
+    "wyjscie": ""
+  }
+}

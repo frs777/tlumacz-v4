@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tlumacz"
+version = "0.40.0"
+description = "Tlumacz V4"
+readme = "README.md"
+requires-python = ">=3.12,<3.15"
+license = "MIT"
+license-files = ["LICENSE", "NOTICE", "licenses/*"]
+authors = [
+    {name = "Tlumacz Team"},
+]
+dependencies = [
+    "PySide6>=6.5",
+    "lxml>=5.0",
+    "lingua-language-detector>=2.1.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.9",
+    "mypy>=1.14",
+]
+
+[project.scripts]
+tlumacz = "tlumacz.qml_gui.app:main"
+
+[project.urls]
+Repository = "https://github.com/frs777/tlumacz-v4"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+tlumacz = [
+    "resources/okapi-runtime/**/*",
+    "resources/filter-host/**/*",
+    "resources/NOTICE",
+    "resources/cloud_models.json",
+    "resources/default-config/*.json",
+    "backends/apertium/native_runtime/**/*",
+    "backends/llama_cpp/native/**/*",
+    "qml_gui/*.qml",
+    "qml_gui/*.md",
+    "*.svg",
+    "qml_gui/*.svg",
+    "qml_gui/texts/**/*.txt",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+src = ["src", "tests"]
+exclude = ["temp", ".migration-backups", ".backup", "Aperitium"]
+include = ["src/**/*.py", "tests/**/*.py"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.mypy]
+python_version = "3.12"
+mypy_path = "src"
+ignore_missing_imports = true
+packages = ["tlumacz"]

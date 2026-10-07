@@ -1,0 +1,2597 @@
+schema_version: 4
+generated: '2026-10-07'
+scope: all-files-under-docs
+policy: docs/AGENTS.md
+change_log: docs/DOCUMENTATION_CHANGELOG.md
+source_of_truth:
+  current_state: docs/STATUS.md
+  architecture: docs/ARCHITECTURE.md
+  technical: docs/technical-docs/index.md
+  retired: docs/RETIRED_FUNCTIONALITY.md
+status_values:
+- active
+- plan
+- research
+- historical
+- superseded
+- evidence
+- backup
+- closed
+file_count: 511
+status_counts:
+  active: 94
+  closed: 6
+  evidence: 360
+  historical: 35
+  plan: 13
+  research: 2
+  superseded: 1
+zone_counts:
+  archive: 32
+  audit: 23
+  deployment: 5
+  inbox: 1
+  plans: 29
+  release: 2
+  reports: 58
+  research: 2
+  root: 47
+  screenshots: 17
+  technical: 36
+  tests: 259
+entries:
+  - path: docs/archive/audits/BUG_HISTORY_2026-10-04.md
+    title: "Historia zamkniętych i migracyjnych wpisów BUG"
+    zone: archive
+    status: historical
+    size_bytes: 14490
+  - path: docs/archive/legacy/OPIS_PROGRAMU_DLA_AGENTOW.txt
+    title: "Tłumacz V4 — opis programu dla agentów"
+    zone: archive
+    status: historical
+    size_bytes: 16226
+  - path: docs/archive/legacy/ulepszenia.okular
+    title: "ulepszenia.okular"
+    zone: archive
+    status: historical
+    size_bytes: 12917
+  - path: docs/archive/legacy/windows/localized/de/windows-exe-build.md
+    title: "DOKUMENTSTATUS: HISTORISCH / V3-RESEARCH"
+    zone: archive
+    status: historical
+    size_bytes: 5457
+  - path: docs/archive/legacy/windows/localized/windows-exe-build.md
+    title: "DOCUMENT STATUS: HISTORICAL / V3 RESEARCH"
+    zone: archive
+    status: historical
+    size_bytes: 5080
+  - path: docs/archive/legacy/windows/windows-build-report-2026-09-10.md
+    title: "STATUS DOKUMENTU: HISTORYCZNY / V3"
+    zone: archive
+    status: historical
+    size_bytes: 16604
+  - path: docs/archive/legacy/windows/windows-exe-build-0.31.1.md
+    title: "STATUS DOKUMENTU: HISTORYCZNY / V3"
+    zone: archive
+    status: historical
+    size_bytes: 5091
+  - path: docs/archive/legacy/windows/windows-exe-build.md
+    title: "STATUS DOKUMENTU: HISTORYCZNY / RESEARCH V3"
+    zone: archive
+    status: historical
+    size_bytes: 5338
+  - path: docs/archive/legacy/windows/windows-kompilacja-plan-2026-09-10.md
+    title: "STATUS DOKUMENTU: HISTORYCZNY / V3"
+    zone: archive
+    status: historical
+    size_bytes: 20412
+  - path: docs/archive/legacy/windows/windows-kompilacja.md
+    title: "STATUS DOKUMENTU: HISTORYCZNY / V3"
+    zone: archive
+    status: historical
+    size_bytes: 20412
+  - path: docs/archive/legacy/windows/windows.md
+    title: "STATUS DOKUMENTU: HISTORYCZNY / V3"
+    zone: archive
+    status: historical
+    size_bytes: 16604
+  - path: docs/archive/migration/MIGRATION_INVENTORY.md
+    title: "STATUS DOKUMENTU: HISTORYCZNY"
+    zone: archive
+    status: historical
+    size_bytes: 4378
+  - path: docs/archive/migration/MIGRATION_NOTES_V3_TO_V4.md
+    title: "Notatki migracyjne V3 → V4"
+    zone: archive
+    status: historical
+    size_bytes: 2410
+  - path: docs/archive/migration/PLAN_MIGRACJI-v4.md
+    title: "STATUS DOKUMENTU: HISTORYCZNY PLAN MIGRACJI"
+    zone: archive
+    status: historical
+    size_bytes: 28934
+  - path: docs/archive/migration/Raport_koncowy_migracji_v3-v4.md
+    title: "Raport końcowy migracji V3 → V4"
+    zone: archive
+    status: historical
+    size_bytes: 21172
+  - path: docs/archive/plans/PLAN_KONFIGURACJI_LLAMA_JSON-implemented-2026-09-28.md
+    title: "Plan przebudowy konfiguracji llama.cpp i config.json"
+    zone: archive
+    status: historical
+    size_bytes: 6273
+  - path: docs/archive/plans/PLAN_NAPRAWCZY_GUI_CLOUD_2026-10-01.md
+    title: "Plan naprawczy GUI i Cloud V3 → V4 — 2026-10-01"
+    zone: archive
+    status: historical
+    size_bytes: 2386
+  - path: docs/archive/plans/PLAN_PODZIALU_MAIN_WINDOW_2026-09-26.md
+    title: "STATUS DOKUMENTU: HISTORYCZNY / SUPERSEDED"
+    zone: archive
+    status: historical
+    size_bytes: 14978
+  - path: docs/archive/reference/AGENTS-v3.md
+    title: "AGENTS.md — referencja historyczna V3"
+    zone: archive
+    status: historical
+    size_bytes: 493
+  - path: docs/archive/reference/CHANGELOG_LEGACY_V4_2026-10-04.md
+    title: "CHANGELOG V4"
+    zone: archive
+    status: historical
+    size_bytes: 24415
+  - path: docs/archive/reference/OPIS_PROGRAMU_DLA_AGENTOW_ROOT_2026-10-05.md
+    title: "Tłumacz V4 — opis programu dla agentów"
+    zone: archive
+    status: superseded
+    size_bytes: 16703
+  - path: docs/archive/reference/OpenNMT-Bergemot.pdf
+    title: "OpenNMT-Bergemot"
+    zone: archive
+    status: historical
+    size_bytes: 1605488
+  - path: docs/archive/reference/STRUKTURA_V4.md
+    title: "Tłumacz V4 — docelowa struktura dokumentacji"
+    zone: archive
+    status: historical
+    size_bytes: 951
+  - path: docs/archive/reference/Układ GUI-aqutorski.md
+    title: "UKLAD ELEMENTOW GUI"
+    zone: archive
+    status: historical
+    size_bytes: 5139
+  - path: docs/archive/reference/V3_GIT_STATUS_BASELINE.txt
+    title: "V3_GIT_STATUS_BASELINE.txt"
+    zone: archive
+    status: historical
+    size_bytes: 4064
+  - path: docs/archive/reference/content.xml
+    title: "content.xml"
+    zone: archive
+    status: historical
+    size_bytes: 221
+  - path: docs/archive/reference/convert.py
+    title: "convert.py"
+    zone: archive
+    status: historical
+    size_bytes: 3923
+  - path: docs/archive/reference/index-v3.md
+    title: "INDEX V3 — referencja historyczna"
+    zone: archive
+    status: historical
+    size_bytes: 144
+  - path: docs/archive/reference/index-v3.tmol
+    title: "index-v3.tmol"
+    zone: archive
+    status: historical
+    size_bytes: 225
+  - path: docs/archive/reference/index.tmol
+    title: "index.tmol"
+    zone: archive
+    status: historical
+    size_bytes: 433
+  - path: docs/archive/reference/metadata.xml
+    title: "metadata.xml"
+    zone: archive
+    status: historical
+    size_bytes: 4418
+  - path: docs/archive/research/ulepszenia.okular
+    title: "ulepszenia.okular"
+    zone: archive
+    status: historical
+    size_bytes: 13385
+  - path: docs/Audyt/2026-10-06-STAN-SESI-GATE-05.md
+    title: "Stan projektu — sesja 2026-10-06"
+    zone: audit
+    status: evidence
+    size_bytes: 6603
+  - path: docs/Audyt/AUDYT_DOKUMENTACJI_2026-10-01.md
+    title: "Audyt dokumentacji — 2026-10-01"
+    zone: audit
+    status: evidence
+    size_bytes: 3442
+  - path: docs/Audyt/AUDYT_DOKUMENTACJI_2026-10-04.md
+    title: "Audyt dokumentacji — 2026-10-04"
+    zone: audit
+    status: evidence
+    size_bytes: 3026
+  - path: docs/Audyt/AUDYT_FINALNY_GATE_2026-10-04.md
+    title: "Audyt finalnego gate'u V4 — 2026-10-04"
+    zone: audit
+    status: evidence
+    size_bytes: 4139
+  - path: docs/Audyt/AUDYT_FORENSICZNY_V3_V4_2026-10-01.md
+    title: "Audyt forensyczny migracji V3 → V4"
+    zone: audit
+    status: evidence
+    size_bytes: 28575
+  - path: docs/Audyt/AUDYT_KODU_2026-10-01.md
+    title: "Audyt inżynierski kodu — 2026-10-01"
+    zone: audit
+    status: evidence
+    size_bytes: 3178
+  - path: docs/Audyt/AUDYT_KORELACJI_DOKUMENTACJI_KOD_2026-10-04.md
+    title: "Audyt korelacji kodu z dokumentacją — 2026-10-04"
+    zone: audit
+    status: evidence
+    size_bytes: 3873
+  - path: docs/Audyt/AUDYT_LICENCYJNY_OKAPI_LINGUA_APERTIUM_2026-09-28.md
+    title: "Audyt licencyjny: Okapi, lingua-rs i Apertium"
+    zone: audit
+    status: evidence
+    size_bytes: 13673
+  - path: docs/Audyt/AUDYT_PONYTAIL_2026-10-03.md
+    title: "Audyt kodu — Tłumacz V4"
+    zone: audit
+    status: evidence
+    size_bytes: 5778
+  - path: docs/Audyt/AUDYT_REGRESJI_GUI_CLOUD_V3_V4_2026-10-01.md
+    title: "Audyt regresji GUI i backendów Cloud V3 → V4 — 2026-10-01"
+    zone: audit
+    status: evidence
+    size_bytes: 4531
+  - path: docs/Audyt/CHECKPOINT_GUI_2026-10-04.md
+    title: "CHECKPOINT — aktualny stan GUI V4 i zakres dalszej pracy"
+    zone: audit
+    status: evidence
+    size_bytes: 7848
+  - path: docs/Audyt/DIAGNOSTYKA_GUI_2026-10-05.md
+    title: "Głęboki research przyczyn problemu GUI V4 — raport przyczynowy i plan naprawy"
+    zone: audit
+    status: evidence
+    size_bytes: 17834
+  - path: docs/Audyt/DIAGNOSTYKA_GUI_TEMP_2026-10-04.md
+    title: "Tymczasowa notatka diagnostyczna — V4 GUI: zmiany w TranslationPage.qml niewidoczne"
+    zone: audit
+    status: historical
+    size_bytes: 8219
+  - path: docs/Audyt/LAUNCHER_P0_2026-10-01.md
+    title: "Audyt P0 — launcher V4 — 2026-10-01"
+    zone: audit
+    status: evidence
+    size_bytes: 1767
+  - path: docs/Audyt/PARYTET_V3_V4_MATRIX_2026-10-04.md
+    title: "Kanoniczna macierz parytetu V3 → V4"
+    zone: audit
+    status: evidence
+    size_bytes: 14541
+  - path: docs/Audyt/RAPORT_AUDYTU_DOKUMENTACJI_V3_V4_2026-09-30.md
+    title: "Raport końcowego audytu dokumentacji V3 → V4"
+    zone: audit
+    status: evidence
+    size_bytes: 3319
+  - path: docs/Audyt/RAPORT_KONCOWY_AUDYTU_2026-10-01.md
+    title: "Raport końcowy audytu inżynierskiego — Tłumacz V4"
+    zone: audit
+    status: evidence
+    size_bytes: 3875
+  - path: docs/Audyt/RAPORT_NAPRAWY_GUI_CLOUD_2026-10-01.md
+    title: "Raport naprawy regresji GUI i Cloud V3 → V4 — 2026-10-01"
+    zone: audit
+    status: evidence
+    size_bytes: 2858
+  - path: docs/Audyt/REFAKTORYZACJA_GUI_BUILDERY_2026-10-01.md
+    title: "Audyt techniczny — dekompozycja builderów GUI"
+    zone: audit
+    status: evidence
+    size_bytes: 1885
+  - path: docs/Audyt/REFAKTORYZACJA_GUI_KONTROLERY_2026-10-01.md
+    title: "Refaktoryzacja kompetencji GUI — 2026-10-01"
+    zone: audit
+    status: evidence
+    size_bytes: 1710
+  - path: docs/Audyt/REFAKTORYZACJA_MAIN_WINDOW_2026-10-01.md
+    title: "Refaktoryzacja rdzenia MainWindow — 2026-10-01"
+    zone: audit
+    status: evidence
+    size_bytes: 1823
+  - path: docs/Audyt/adyt-raport-2026-10-05.md
+    title: "Audyt inżynierski — Tłumacz V4"
+    zone: audit
+    status: evidence
+    size_bytes: 20002
+  - path: docs/Audyt/raport-dokumentyacji-2026-10-05.md
+    title: "Raport dokumentacji — 2026-10-05"
+    zone: audit
+    status: evidence
+    size_bytes: 5984
+  - path: docs/wdrozenia/karta-referencyjna-llama-sprzet.md
+    title: "Karta referencyjna — kompilacja llama.cpp dla sprzętu"
+    zone: deployment
+    status: active
+    size_bytes: 2139
+  - path: docs/wdrozenia/llama-cpp-runtime.md
+    title: "Runtime llama.cpp dołączony do Tłumacza"
+    zone: deployment
+    status: active
+    size_bytes: 11570
+  - path: docs/wdrozenia/rekomendacja-ustawien-llama.cpp.md
+    title: "Rekomendacja ustawień llama.cpp dla Tłumacz V4"
+    zone: deployment
+    status: active
+    size_bytes: 10251
+  - path: docs/wdrozenia/serwery-chmurowe.md
+    title: "Serwery chmurowe / darmowe usługi tłumaczeniowe"
+    zone: deployment
+    status: active
+    size_bytes: 42274
+  - path: docs/wdrozenia/wdrozenie-tplugin.md
+    title: "Wdrożenie .tplugin w Tłumaczu V4"
+    zone: deployment
+    status: plan
+    size_bytes: 13324
+  - path: docs/_inbox/AGENT.md
+    title: "AGENT.md — zasady pracy w `docs/_inbox/`"
+    zone: inbox
+    status: active
+    size_bytes: 2619
+  - path: docs/Plany/00-BASELINE-MAPA-PARYTETU-V3-V4.md
+    title: "PLAN 00 — zamrożenie baseline i kanoniczna mapa V3 → V4"
+    zone: plans
+    status: plan
+    size_bytes: 6190
+  - path: docs/Plany/00-Podsumowanie.md
+    title: "00 — Podsumowanie realizacji planu baseline V3 → V4"
+    zone: plans
+    status: evidence
+    size_bytes: 3643
+  - path: docs/Plany/01-RESTORE-BRAKUJACE-FUNKCJE.md
+    title: "PLAN 01 — odtworzenie brakujących funkcji"
+    zone: plans
+    status: plan
+    size_bytes: 16089
+  - path: docs/Plany/02-Podsumowanie.md
+    title: "PLAN 02 — podsumowanie wykonania"
+    zone: plans
+    status: plan
+    size_bytes: 3820
+  - path: docs/Plany/02-REDUKCJA-NADMIAROWEGO-KODU.md
+    title: "PLAN 02 — usunięcie nadmiarowego i martwego kodu"
+    zone: plans
+    status: closed
+    size_bytes: 5708
+  - path: docs/Plany/03-NAPRAWA-REGRESJI.md
+    title: "PLAN 03 — naprawa regresji"
+    zone: plans
+    status: closed
+    size_bytes: 4856
+  - path: docs/Plany/04-OPTYMALIZACJA.md
+    title: "PLAN 04 — optymalizacja po odzyskaniu funkcji"
+    zone: plans
+    status: closed
+    size_bytes: 14007
+  - path: docs/Plany/05-FINALNY-GATE-I-ODBIOR.md
+    title: "PLAN 05 — końcowy gate jakości i odbiór"
+    zone: plans
+    status: plan
+    size_bytes: 5913
+  - path: docs/Plany/PLAN-02-FILTER-ENGINE-2026-10-05.md
+    title: "PLAN-02 — Filter Engine i dokumenty"
+    zone: plans
+    status: active
+    size_bytes: 2843
+  - path: docs/Plany/PLAN-03-LLAMA-CPP-TRANSLATEGEMMA-2026-10-05.md
+    title: "Wykonanie — 2026-10-06"
+    zone: plans
+    status: plan
+    size_bytes: 5878
+  - path: docs/Plany/PLAN-04-APERTIUM-2026-10-05.md
+    title: "PLAN-03 — Apertium runtime i backend"
+    zone: plans
+    status: active
+    size_bytes: 2342
+  - path: docs/Plany/PLAN-05-CLOUD-MOZHI-2026-10-05.md
+    title: "PLAN-05 — Cloud i Mozhi"
+    zone: plans
+    status: plan
+    size_bytes: 2041
+  - path: docs/Plany/PLAN-07-SECURITY-LIFECYCLE-2026-10-05.md
+    title: "PLAN-06 — Konfiguracja, sekrety, cache i lifecycle"
+    zone: plans
+    status: active
+    size_bytes: 5668
+  - path: docs/Plany/PLAN-08-QML-GUI-2026-10-05.md
+    title: "PLAN-07 — GUI QML i warstwa prezentacji"
+    zone: plans
+    status: active
+    size_bytes: 9677
+  - path: docs/Plany/PLAN-10-TESTY-CI-2026-10-05.md
+    title: "PLAN-09 — Testy, wiarygodność testów i CI"
+    zone: plans
+    status: active
+    size_bytes: 3828
+  - path: docs/Plany/PLAN-11-DOKUMENTACJA-REPO-2026-10-05.md
+    title: "PLAN-10 — Dokumentacja i higiena repozytorium"
+    zone: plans
+    status: active
+    size_bytes: 2119
+  - path: docs/Plany/PLAN-12-TRANSLATEGEMMA-CHUNKOWANIE-JEZYKI-SKIP-2026-10-07.md
+    title: "PLAN-12 — Naprawa kontraktu TranslateGemma: kody językowe, chunkowanie i pomijanie"
+    zone: plans
+    status: active
+    size_bytes: 23490
+  - path: docs/Plany/PLAN-13-REMEDIACJA-DOKUMENTACJI-REPO-2026-10-07.md
+    title: "PLAN-13 — Remediacja dokumentacji repozytorium"
+    zone: plans
+    status: closed
+    size_bytes: 15122
+  - path: docs/Plany/PLAN-14-MOTYW-QML-REGRESJA-2026-10-07.md
+    title: "PLAN-14 — bezpieczna remediacja regresji motywu QML/Qt — 2026-10-07"
+    zone: plans
+    status: plan
+    size_bytes: 10789
+  - path: docs/Plany/PLAN-2026-10-05.md
+    title: "PLAN-2026-10-05 — architektura i kolejność doprowadzenia Tłumacza V4 do używalności"
+    zone: plans
+    status: active
+    size_bytes: 12378
+  - path: docs/Plany/PLAN-2026-10-06-paczki-apertium.md
+    title: "Paczki par językowych Apertium — plan wdrożenia"
+    zone: plans
+    status: plan
+    size_bytes: 1018
+  - path: docs/Plany/PLAN-ROZSZERZALNE-BACKENDY-I-WLASNY-SERWER-2026-10-07.txt
+    title: "PLAN-ROZSZERZALNE-BACKENDY-I-WLASNY-SERWER-2026-10-07.txt"
+    zone: plans
+    status: plan
+    size_bytes: 12800
+  - path: docs/Plany/PLAN-WYDZIELENIA-PREPROCESSORA-2026-10-07.md
+    title: "Wydzielenie Preprocessora z Filter Engine — plan implementacji"
+    zone: plans
+    status: plan
+    size_bytes: 12040
+  - path: docs/Plany/PLAN-naprawy-2026-10-05.md
+    title: "PLAN-naprawy-2026-10-05"
+    zone: plans
+    status: active
+    size_bytes: 6577
+  - path: docs/Plany/PLAN_NAPRAWCZY_AUDYT_2026-10-01.md
+    title: "Plan naprawczy po audycie — 2026-10-01"
+    zone: plans
+    status: plan
+    size_bytes: 3926
+  - path: docs/Plany/dokonczenie.md
+    title: "Dokończenie Tłumacza V4"
+    zone: plans
+    status: active
+    size_bytes: 9040
+  - path: docs/Plany/plan-naprawczy-szkic.md
+    title: "Szkic planu naprawczego — Tłumacz V4"
+    zone: plans
+    status: plan
+    size_bytes: 9998
+  - path: docs/Plany/plan-wdrozenia-jezyka-Apertium.md
+    title: "Plan wdrożenia wyboru języka Apertium"
+    zone: plans
+    status: closed
+    size_bytes: 7938
+  - path: docs/Plany/tworzenie-tplugin.md
+    title: "Metodologia produkcyjna tworzenia .tplugin"
+    zone: plans
+    status: active
+    size_bytes: 10336
+  - path: docs/release/RELEASE_NOTES_0.40.0.md
+    title: "Tłumacz V4 — release candidate 0.40.0"
+    zone: release
+    status: active
+    size_bytes: 3397
+  - path: docs/release/ROLLBACK_0.40.0.md
+    title: "Procedura rollbacku 0.40.0"
+    zone: release
+    status: active
+    size_bytes: 1090
+  - path: docs/reports/FAZA_0_BASELINE_2026-09-30.md
+    title: "Raport migracji — Faza 0: V3 baseline"
+    zone: reports
+    status: evidence
+    size_bytes: 1796
+  - path: docs/reports/FAZA_10_LEGACY_REMOVAL_2026-09-30.md
+    title: "Raport migracji — Faza 10: legacy removal"
+    zone: reports
+    status: evidence
+    size_bytes: 1714
+  - path: docs/reports/FAZA_11_PACKAGING_BLOCKED_2026-09-30.md
+    title: "STATUS DOKUMENTU: HISTORYCZNY / EVIDENCE"
+    zone: reports
+    status: evidence
+    size_bytes: 3522
+  - path: docs/reports/FAZA_12_RELEASE_2026-09-30.md
+    title: "Faza 12 — Release 0.40.0 — raport"
+    zone: reports
+    status: evidence
+    size_bytes: 1719
+  - path: docs/reports/FAZA_13_FINAL_HANDOFF_2026-09-30.md
+    title: "STATUS DOKUMENTU: HISTORYCZNY / EVIDENCE"
+    zone: reports
+    status: evidence
+    size_bytes: 2292
+  - path: docs/reports/FAZA_1_BOOTSTRAP_2026-09-30.md
+    title: "Raport Fazy 1 — bootstrap V4"
+    zone: reports
+    status: evidence
+    size_bytes: 1204
+  - path: docs/reports/FAZA_2_CONTRACTS_2026-09-30.md
+    title: "Raport Fazy 2 — kontrakty"
+    zone: reports
+    status: evidence
+    size_bytes: 1012
+  - path: docs/reports/FAZA_3_FILTER_ENGINE_HOST_PROTOCOL_DOCX_ROUNDTRIP_2026-09-30.md
+    title: "Faza 3 — Filter Host, protokół, DOCX i round-trip"
+    zone: reports
+    status: evidence
+    size_bytes: 2154
+  - path: docs/reports/FAZA_3_FILTER_ENGINE_LIFECYCLE_2026-09-30.md
+    title: "Faza 3 — Filter Engine: lifecycle"
+    zone: reports
+    status: evidence
+    size_bytes: 992
+  - path: docs/reports/FAZA_3_FILTER_ENGINE_MARKER_VALIDATOR_2026-09-30.md
+    title: "Faza 3 — Filter Engine: marker validator"
+    zone: reports
+    status: evidence
+    size_bytes: 1399
+  - path: docs/reports/FAZA_3_FILTER_ENGINE_PROCESSOR_2026-09-30.md
+    title: "Faza 3 — Filter Engine: processor"
+    zone: reports
+    status: evidence
+    size_bytes: 844
+  - path: docs/reports/FAZA_3_FILTER_ENGINE_REGISTRY_2026-09-30.md
+    title: "Faza 3 — Filter Engine: registry"
+    zone: reports
+    status: evidence
+    size_bytes: 1168
+  - path: docs/reports/FAZA_3_FILTER_ENGINE_VALIDATOR_2026-09-30.md
+    title: "Faza 3 — Filter Engine: validator"
+    zone: reports
+    status: evidence
+    size_bytes: 1148
+  - path: docs/reports/FAZA_3_FILTER_ENGINE_WORKSPACE_2026-09-30.md
+    title: "Faza 3 — Filter Engine: workspace"
+    zone: reports
+    status: evidence
+    size_bytes: 975
+  - path: docs/reports/FAZA_4_LLAMA_CPP_ADAPTER_2026-09-30.md
+    title: "Faza 4 — LlamaCppBackend: adapter"
+    zone: reports
+    status: evidence
+    size_bytes: 827
+  - path: docs/reports/FAZA_4_LLAMA_CPP_CANCELLATION_2026-09-30.md
+    title: "Faza 4 — LlamaCppBackend: cancellation"
+    zone: reports
+    status: evidence
+    size_bytes: 448
+  - path: docs/reports/FAZA_4_LLAMA_CPP_HEALTH_CONTRACT_E2E_2026-09-30.md
+    title: "Faza 4 — LlamaCppBackend: health-check, contract suite i E2E"
+    zone: reports
+    status: evidence
+    size_bytes: 964
+  - path: docs/reports/FAZA_4_LLAMA_CPP_RUNTIME_OWNERSHIP_2026-09-30.md
+    title: "Faza 4 — LlamaCppBackend: runtime manager i process ownership"
+    zone: reports
+    status: evidence
+    size_bytes: 740
+  - path: docs/reports/FAZA_4_LLAMA_CPP_TIMEOUT_2026-09-30.md
+    title: "Faza 4 — LlamaCppBackend: timeout"
+    zone: reports
+    status: evidence
+    size_bytes: 450
+  - path: docs/reports/FAZA_5_CLOUD_CONTRACT_TESTS_2026-09-30.md
+    title: "Faza 5 — Cloud: contract tests"
+    zone: reports
+    status: evidence
+    size_bytes: 377
+  - path: docs/reports/FAZA_5_CLOUD_ERROR_CLASSIFICATION_2026-09-30.md
+    title: "Faza 5 — Cloud: klasyfikacja błędów"
+    zone: reports
+    status: evidence
+    size_bytes: 528
+  - path: docs/reports/FAZA_5_CLOUD_MOZHI_2026-09-30.md
+    title: "Faza 5 — Cloud: Mozhi"
+    zone: reports
+    status: evidence
+    size_bytes: 586
+  - path: docs/reports/FAZA_5_CLOUD_PROFILE_MIGRATION_2026-09-30.md
+    title: "Faza 5 — Cloud: profile migration"
+    zone: reports
+    status: evidence
+    size_bytes: 518
+  - path: docs/reports/FAZA_5_CLOUD_PROVIDER_INTERFACE_2026-09-30.md
+    title: "Faza 5 — Cloud: provider interface"
+    zone: reports
+    status: evidence
+    size_bytes: 483
+  - path: docs/reports/FAZA_5_CLOUD_ROUTER_2026-09-30.md
+    title: "Faza 5 — Cloud: CloudRouter"
+    zone: reports
+    status: evidence
+    size_bytes: 462
+  - path: docs/reports/FAZA_5_CLOUD_SECRET_ISOLATION_2026-09-30.md
+    title: "Faza 5 — Cloud: izolacja sekretów"
+    zone: reports
+    status: evidence
+    size_bytes: 395
+  - path: docs/reports/FAZA_5_CLOUD_TIMEOUTY_2026-09-30.md
+    title: "Faza 5 — Cloud: timeouty"
+    zone: reports
+    status: evidence
+    size_bytes: 444
+  - path: docs/reports/FAZA_6_APERTIUM_ADAPTER_2026-09-30.md
+    title: "Faza 6 — Apertium: adapter"
+    zone: reports
+    status: evidence
+    size_bytes: 535
+  - path: docs/reports/FAZA_6_APERTIUM_BACKEND_2026-09-30.md
+    title: "Faza 6 — Apertium: backend"
+    zone: reports
+    status: evidence
+    size_bytes: 443
+  - path: docs/reports/FAZA_6_APERTIUM_CONTRACT_TESTS_2026-09-30.md
+    title: "Faza 6 — Apertium: contract tests"
+    zone: reports
+    status: evidence
+    size_bytes: 238
+  - path: docs/reports/FAZA_6_APERTIUM_DEPENDENCIES_LICENSES_2026-09-30.md
+    title: "Faza 6 — Apertium: dependency inventory i licencje"
+    zone: reports
+    status: evidence
+    size_bytes: 1142
+  - path: docs/reports/FAZA_6_APERTIUM_E2E_HTML_DOCX_2026-09-30.md
+    title: "Faza 6 — Apertium: E2E HTML/DOCX"
+    zone: reports
+    status: evidence
+    size_bytes: 504
+  - path: docs/reports/FAZA_6_APERTIUM_RUNTIME_2026-09-30.md
+    title: "Faza 6 — Apertium: runtime"
+    zone: reports
+    status: evidence
+    size_bytes: 880
+  - path: docs/reports/FAZA_6_APERTIUM_RUNTIME_GATE_2026-10-06.md
+    title: "FAZA 6 — Apertium runtime gate — 2026-10-06"
+    zone: reports
+    status: evidence
+    size_bytes: 4633
+  - path: docs/reports/FAZA_7_DOCUMENT_PROCESSOR_CANCELLATION_2026-09-30.md
+    title: "Faza 7 — DocumentProcessor cancellation"
+    zone: reports
+    status: evidence
+    size_bytes: 297
+  - path: docs/reports/FAZA_7_DOCUMENT_SERVICES_COMPLETE_2026-09-30.md
+    title: "Faza 7 — Document Services: zamknięcie"
+    zone: reports
+    status: evidence
+    size_bytes: 418
+  - path: docs/reports/FAZA_7_DOCX_2026-09-30.md
+    title: "Faza 7 — DOCX"
+    zone: reports
+    status: evidence
+    size_bytes: 494
+  - path: docs/reports/FAZA_7_EPUB_2026-09-30.md
+    title: "Faza 7 — EPUB"
+    zone: reports
+    status: evidence
+    size_bytes: 392
+  - path: docs/reports/FAZA_7_HTML_FILTER_PREREQUISITE_2026-09-30.md
+    title: "Faza 7 — HTML Filter prerekwizyt"
+    zone: reports
+    status: evidence
+    size_bytes: 405
+  - path: docs/reports/FAZA_7_HTML_XHTML_2026-09-30.md
+    title: "Faza 7 — HTML/XHTML"
+    zone: reports
+    status: evidence
+    size_bytes: 358
+  - path: docs/reports/FAZA_7_MARKDOWN_2026-09-30.md
+    title: "Faza 7 — Markdown"
+    zone: reports
+    status: evidence
+    size_bytes: 303
+  - path: docs/reports/FAZA_7_ODT_2026-09-30.md
+    title: "Faza 7 — ODT"
+    zone: reports
+    status: evidence
+    size_bytes: 279
+  - path: docs/reports/FAZA_7_XLIFF_2026-09-30.md
+    title: "Faza 7 — XLIFF"
+    zone: reports
+    status: evidence
+    size_bytes: 257
+  - path: docs/reports/FAZA_8_CHUNK_PLANNER_2026-09-30.md
+    title: "Faza 8 — ChunkPlanner"
+    zone: reports
+    status: evidence
+    size_bytes: 304
+  - path: docs/reports/FAZA_8_DOCUMENT_TRANSLATION_SERVICE_2026-09-30.md
+    title: "Faza 8 — DocumentTranslationService"
+    zone: reports
+    status: evidence
+    size_bytes: 253
+  - path: docs/reports/FAZA_8_PROMPT_BUILDER_2026-09-30.md
+    title: "Faza 8 — PromptBuilder"
+    zone: reports
+    status: evidence
+    size_bytes: 208
+  - path: docs/reports/FAZA_8_RESULT_VALIDATOR_2026-09-30.md
+    title: "Faza 8 — ResultValidator"
+    zone: reports
+    status: evidence
+    size_bytes: 197
+  - path: docs/reports/FAZA_8_TRANSLATION_CACHE_2026-09-30.md
+    title: "Faza 8 — TranslationCache"
+    zone: reports
+    status: evidence
+    size_bytes: 273
+  - path: docs/reports/FAZA_8_TRANSLATION_EXECUTOR_2026-09-30.md
+    title: "Faza 8 — TranslationExecutor"
+    zone: reports
+    status: evidence
+    size_bytes: 248
+  - path: docs/reports/FAZA_8_TRANSLATION_ORCHESTRATOR_2026-09-30.md
+    title: "Faza 8 — TranslationOrchestrator"
+    zone: reports
+    status: evidence
+    size_bytes: 244
+  - path: docs/reports/FAZA_8_TRANSLATOR_COMPLETE_2026-09-30.md
+    title: "Faza 8 — Translator: zamknięcie"
+    zone: reports
+    status: evidence
+    size_bytes: 270
+  - path: docs/reports/FAZA_9_GUI_COMPLETE_2026-09-30.md
+    title: "Faza 9 — GUI: zamknięcie"
+    zone: reports
+    status: evidence
+    size_bytes: 332
+  - path: docs/reports/FAZA_9_GUI_CONTROLLERS_2026-09-30.md
+    title: "Faza 9 — GUI Controllers"
+    zone: reports
+    status: evidence
+    size_bytes: 386
+  - path: docs/reports/PLAN-05-CLOUD-MOZHI-2026-10-06.md
+    title: "PLAN-05 — Cloud i Mozhi — raport realizacji"
+    zone: reports
+    status: evidence
+    size_bytes: 3310
+  - path: docs/reports/PLAN-07-SECURITY-LIFECYCLE-2026-10-06.md
+    title: "Raport realizacji PLAN-07 — Security / Lifecycle"
+    zone: reports
+    status: evidence
+    size_bytes: 5353
+  - path: docs/reports/REGRESJA_MARKER_UNICODE_2026-09-30.md
+    title: "Regresja MarkerValidator — Unicode"
+    zone: reports
+    status: evidence
+    size_bytes: 422
+  - path: docs/reports/handoff-agent-okapi-filter-engine.md
+    title: "Handoff techniczny — Filter Engine / Okapi"
+    zone: reports
+    status: evidence
+    size_bytes: 13041
+  - path: docs/reports/translate-report.md
+    title: "Raport lokalizacji dokumentacji — Tłumacz V4"
+    zone: reports
+    status: evidence
+    size_bytes: 5202
+  - path: docs/research/RESEARCH_APERTIUM_BACKEND-completed-2026-09-28.md
+    title: "Research: Apertium jako backend Tłumacza V3"
+    zone: research
+    status: research
+    size_bytes: 7450
+  - path: docs/research/TranslatePsy-AfriSLM-0.8B.md
+    title: "TranslatePsy-AfriSLM-0.8B-Q8-GGUF"
+    zone: research
+    status: research
+    size_bytes: 13780
+  - path: docs/AGENTS.md
+    title: "Polityka dokumentacji projektu"
+    zone: root
+    status: active
+    size_bytes: 4568
+  - path: docs/ARCHITECTURE.md
+    title: "Architektura V4"
+    zone: root
+    status: active
+    size_bytes: 19203
+  - path: docs/BUG.md
+    title: "Tłumacz V4 — aktywne defekty i ryzyka"
+    zone: root
+    status: active
+    size_bytes: 34849
+  - path: docs/BUILD.md
+    title: "V4 — canonical build i release smoke"
+    zone: root
+    status: active
+    size_bytes: 2596
+  - path: docs/CHANGELOG.md
+    title: "2026-10-07 — uproszczenie magazynu filtrów"
+    zone: root
+    status: active
+    size_bytes: 116271
+  - path: docs/DEVELOPMENT.md
+    title: "Development V4"
+    zone: root
+    status: active
+    size_bytes: 1975
+  - path: docs/DOCUMENTATION_CHANGELOG.md
+    title: "DOCUMENTATION_CHANGELOG.md"
+    zone: root
+    status: active
+    size_bytes: 6962
+  - path: docs/I18N.md
+    title: "Lokalizacja dokumentacji — Tłumacz V4"
+    zone: root
+    status: active
+    size_bytes: 5890
+  - path: docs/I18N_SCOPE.md
+    title: "Zakres lokalizacji — Tłumacz V4"
+    zone: root
+    status: active
+    size_bytes: 7823
+  - path: docs/I18N_STATUS.md
+    title: "Stan lokalizacji — Tłumacz V4"
+    zone: root
+    status: active
+    size_bytes: 2942
+  - path: docs/INDEX.md
+    title: "Indeks dokumentacji Tłumacz V4"
+    zone: root
+    status: active
+    size_bytes: 11298
+  - path: docs/INDEX.yml
+    title: "INDEX.yml"
+    zone: root
+    status: active
+    size_bytes: 95861
+  - path: docs/OPIS_PROGRAMU_DLA_AGENTOW.md
+    title: "Tłumacz V4 — opis programu dla agentów"
+    zone: root
+    status: active
+    size_bytes: 16334
+  - path: docs/RETIRED_FUNCTIONALITY.md
+    title: "Funkcjonalności wycofane z Tłumacza V4"
+    zone: root
+    status: active
+    size_bytes: 3171
+  - path: docs/STATUS.md
+    title: "STATUS V4"
+    zone: root
+    status: active
+    size_bytes: 161420
+  - path: docs/TODO.md
+    title: "Tłumacz V4 — aktywne TODO"
+    zone: root
+    status: active
+    size_bytes: 25969
+  - path: docs/de/architecture.md
+    title: "V4-Architektur"
+    zone: root
+    status: active
+    size_bytes: 4085
+  - path: docs/de/changelog.md
+    title: "CHANGELOG V4"
+    zone: root
+    status: active
+    size_bytes: 10101
+  - path: docs/de/development.md
+    title: "Entwicklung V4"
+    zone: root
+    status: active
+    size_bytes: 1194
+  - path: docs/de/i18n-status.md
+    title: "Lokalisierungsstatus — Tłumacz V4"
+    zone: root
+    status: active
+    size_bytes: 2740
+  - path: docs/de/i18n.md
+    title: "Lokalisierung der Dokumentation — Tłumacz V4"
+    zone: root
+    status: active
+    size_bytes: 1359
+  - path: docs/de/status.md
+    title: "V4 STATUS"
+    zone: root
+    status: active
+    size_bytes: 16875
+  - path: docs/de/technical-docs/cloud-translation.md
+    title: "Cloud-Übersetzung — Tlumacz V4"
+    zone: root
+    status: active
+    size_bytes: 2058
+  - path: docs/de/technical-docs/index.md
+    title: "Tlumacz V4 — Technische Dokumentation"
+    zone: root
+    status: active
+    size_bytes: 2420
+  - path: docs/de/technical-docs/models.md
+    title: "Übersetzungsmodelle und Backends — Tlumacz V4"
+    zone: root
+    status: active
+    size_bytes: 2446
+  - path: docs/de/technical-docs/server-management.md
+    title: "Runtime-Verwaltung — Tlumacz V4"
+    zone: root
+    status: active
+    size_bytes: 1967
+  - path: docs/de/technical-docs/user-guide.md
+    title: "Benutzerhandbuch — Tlumacz V4"
+    zone: root
+    status: active
+    size_bytes: 1800
+  - path: docs/de/technical-docs/xliff-pipeline.md
+    title: "XLIFF-2.0-Filter — Tlumacz V4"
+    zone: root
+    status: active
+    size_bytes: 1157
+  - path: docs/de/todo.md
+    title: "TODO V4"
+    zone: root
+    status: active
+    size_bytes: 7004
+  - path: docs/en/architecture.md
+    title: "V4 Architecture"
+    zone: root
+    status: active
+    size_bytes: 3939
+  - path: docs/en/changelog.md
+    title: "CHANGELOG V4"
+    zone: root
+    status: active
+    size_bytes: 9320
+  - path: docs/en/development.md
+    title: "Development V4"
+    zone: root
+    status: active
+    size_bytes: 1121
+  - path: docs/en/i18n-status.md
+    title: "Localization status — Tłumacz V4"
+    zone: root
+    status: active
+    size_bytes: 2630
+  - path: docs/en/i18n.md
+    title: "Documentation localization — Tłumacz V4"
+    zone: root
+    status: active
+    size_bytes: 1253
+  - path: docs/en/status.md
+    title: "V4 STATUS"
+    zone: root
+    status: active
+    size_bytes: 15321
+  - path: docs/en/technical-docs/cloud-translation.md
+    title: "Cloud Translation — Tlumacz V4"
+    zone: root
+    status: active
+    size_bytes: 1909
+  - path: docs/en/technical-docs/index.md
+    title: "Tlumacz V4 — Technical Documentation"
+    zone: root
+    status: active
+    size_bytes: 2281
+  - path: docs/en/technical-docs/models.md
+    title: "Translation Models and Backends — Tlumacz V4"
+    zone: root
+    status: active
+    size_bytes: 2260
+  - path: docs/en/technical-docs/server-management.md
+    title: "Runtime Management — Tlumacz V4"
+    zone: root
+    status: active
+    size_bytes: 1821
+  - path: docs/en/technical-docs/user-guide.md
+    title: "User Guide — Tlumacz V4"
+    zone: root
+    status: active
+    size_bytes: 2088
+  - path: docs/en/technical-docs/xliff-pipeline.md
+    title: "XLIFF 2.0 Filter — Tlumacz V4"
+    zone: root
+    status: active
+    size_bytes: 1103
+  - path: docs/en/todo.md
+    title: "TODO V4"
+    zone: root
+    status: active
+    size_bytes: 6550
+  - path: docs/superpowers/plans/2026-10-03-help-translation-tabs.md
+    title: "Zakładki „Tłumaczenie” i „Pomoc” — plan implementacji"
+    zone: root
+    status: active
+    size_bytes: 6346
+  - path: docs/superpowers/plans/2026-10-03-qml-interface-integration.md
+    title: "Integracja i naprawa GUI QML V4 — plan implementacji"
+    zone: root
+    status: active
+    size_bytes: 3610
+  - path: docs/superpowers/plans/2026-10-06-tplugin-admin-module.md
+    title: "Moduł administracyjny TPlugin — plan wdrożenia"
+    zone: root
+    status: active
+    size_bytes: 4234
+  - path: docs/superpowers/plans/2026-10-07-naprawa-izolacji-sekretow-profili-cloud.md
+    title: "Izolacja sekretów profili Cloud — plan naprawy"
+    zone: root
+    status: active
+    size_bytes: 10434
+  - path: docs/superpowers/plans/macos-bin-build.md
+    title: "Skrócony audyt: binarna dystrybucja macOS"
+    zone: root
+    status: active
+    size_bytes: 6500
+  - path: docs/Zrzuty/API i serwer-chmura-nowa.png
+    title: "API i serwer-chmura-nowa.png"
+    zone: screenshots
+    status: evidence
+    size_bytes: 55536
+  - path: docs/Zrzuty/API i serwer-fastapi.png
+    title: "API i serwer-fastapi.png"
+    zone: screenshots
+    status: evidence
+    size_bytes: 72091
+  - path: docs/Zrzuty/API i serwer-llama.cpp.png
+    title: "API i serwer-llama.cpp.png"
+    zone: screenshots
+    status: evidence
+    size_bytes: 73117
+  - path: docs/Zrzuty/API i serwer-openvino.png
+    title: "API i serwer-openvino.png"
+    zone: screenshots
+    status: evidence
+    size_bytes: 66319
+  - path: docs/Zrzuty/Apertium.png
+    title: "Apertium.png"
+    zone: screenshots
+    status: evidence
+    size_bytes: 39345
+  - path: docs/Zrzuty/Dodatki.png
+    title: "Dodatki.png"
+    zone: screenshots
+    status: evidence
+    size_bytes: 106796
+  - path: docs/Zrzuty/Pomoc.png
+    title: "Pomoc.png"
+    zone: screenshots
+    status: evidence
+    size_bytes: 219389
+  - path: docs/Zrzuty/QMS/API i serwer-chmura-Mozi.png
+    title: "API i serwer-chmura-Mozi.png"
+    zone: screenshots
+    status: evidence
+    size_bytes: 57997
+  - path: docs/Zrzuty/QMS/API i serwer-chmura.png
+    title: "API i serwer-chmura.png"
+    zone: screenshots
+    status: evidence
+    size_bytes: 54684
+  - path: docs/Zrzuty/QMS/API i serwer-llama.cpp.png
+    title: "API i serwer-llama.cpp.png"
+    zone: screenshots
+    status: evidence
+    size_bytes: 80483
+  - path: docs/Zrzuty/QMS/APi i serwer-Apretium.png
+    title: "APi i serwer-Apretium.png"
+    zone: screenshots
+    status: evidence
+    size_bytes: 85152
+  - path: docs/Zrzuty/QMS/Pomoc.png
+    title: "Pomoc.png"
+    zone: screenshots
+    status: evidence
+    size_bytes: 234925
+  - path: docs/Zrzuty/QMS/Przelaczniki-Apretium.png
+    title: "Przelaczniki-Apretium.png"
+    zone: screenshots
+    status: evidence
+    size_bytes: 82881
+  - path: docs/Zrzuty/QMS/Przeloczniki.png
+    title: "Przeloczniki.png"
+    zone: screenshots
+    status: evidence
+    size_bytes: 109944
+  - path: docs/Zrzuty/QMS/Tlumaczenie.png
+    title: "Tlumaczenie.png"
+    zone: screenshots
+    status: evidence
+    size_bytes: 71894
+  - path: docs/Zrzuty/QMS/Tłumaczenie-Apretium.png
+    title: "Tłumaczenie-Apretium.png"
+    zone: screenshots
+    status: evidence
+    size_bytes: 73607
+  - path: docs/Zrzuty/Tłumaczenie.png
+    title: "Tłumaczenie.png"
+    zone: screenshots
+    status: evidence
+    size_bytes: 164372
+  - path: docs/technical-docs/GUI-zbior_praktycznej_wiedzy.md
+    title: "Tłumacz V4 — GUI: zbiór praktycznej wiedzy"
+    zone: technical
+    status: active
+    size_bytes: 61848
+  - path: docs/technical-docs/MECHANIZM_DETEKCJI_JEZYKA_APERTIUM.md
+    title: "Mechanizm detekcji języka i obsługi Apertium"
+    zone: technical
+    status: active
+    size_bytes: 11209
+  - path: docs/technical-docs/QML_GUI_DESIGN.md
+    title: "QML_GUI_DESIGN.md"
+    zone: technical
+    status: active
+    size_bytes: 6002
+  - path: docs/technical-docs/QML_GUI_LAYOUT.md
+    title: "Konfiguracja bieżąca GUI — 2026-10-04"
+    zone: technical
+    status: active
+    size_bytes: 50675
+  - path: docs/technical-docs/QML_GUI_TRANSLATION_CARD_SPEC.md
+    title: "Specyfikacja karty „Tłumaczenie” — GUI QML V4"
+    zone: technical
+    status: active
+    size_bytes: 18834
+  - path: docs/technical-docs/Secyfikacja
+    title: "Secyfikacja"
+    zone: technical
+    status: active
+    size_bytes: 0
+  - path: docs/technical-docs/Secyfikacja intelpletacji zastosowania filtrow jezykowych okapi przy pomocy engine napiosanego w pythonike.md
+    title: "Specyfikacja implementacji zastosowania filtrów językowych Okapi przy pomocy Engine napisanego w Pythonie"
+    zone: technical
+    status: active
+    size_bytes: 38581
+  - path: docs/technical-docs/TRANSLATEGEMMA_GOOGLE_CLOUD.md
+    title: "STATUS DOKUMENTU: HISTORYCZNY / RESEARCH V3"
+    zone: technical
+    status: historical
+    size_bytes: 8328
+  - path: docs/technical-docs/TRANSLATEGEMMA_ONNX_DESKTOP_GUIDE.md
+    title: "STATUS DOKUMENTU: HISTORYCZNY / RESEARCH V3"
+    zone: technical
+    status: historical
+    size_bytes: 32311
+  - path: docs/technical-docs/TRANSLATEGEMMA_OPENVINO_AMD_GUIDE.md
+    title: "STATUS DOKUMENTU: HISTORYCZNY / RESEARCH V3"
+    zone: technical
+    status: historical
+    size_bytes: 29784
+  - path: docs/technical-docs/apertium-backend-integration.md
+    title: "Integracja backendu Apertium — V4"
+    zone: technical
+    status: active
+    size_bytes: 10313
+  - path: docs/technical-docs/apertium-paczki-reczne-tworzenie.md
+    title: "Ręczne tworzenie paczek językowych Apertium"
+    zone: technical
+    status: active
+    size_bytes: 3647
+  - path: docs/technical-docs/apertium-pair-inventory-20261006.md
+    title: "Audyt par Apertium — 2026-10-06"
+    zone: technical
+    status: evidence
+    size_bytes: 3887
+  - path: docs/technical-docs/apertium-pair-inventory-20261006_de.md
+    title: "Audit der Apertium-Paare — 2026-10-06"
+    zone: technical
+    status: evidence
+    size_bytes: 4198
+  - path: docs/technical-docs/apertium-pair-inventory-20261006_en.md
+    title: "Apertium Pair Audit — 2026-10-06"
+    zone: technical
+    status: evidence
+    size_bytes: 3793
+  - path: docs/technical-docs/apertium-pair-packages.md
+    title: "Paczki par językowych Apertium"
+    zone: technical
+    status: active
+    size_bytes: 12534
+  - path: docs/technical-docs/apertium-pair-packages_de.md
+    title: "Apertium-Sprachpaarpakete"
+    zone: technical
+    status: active
+    size_bytes: 13489
+  - path: docs/technical-docs/apertium-pair-packages_en.md
+    title: "Apertium Language-Pair Packages"
+    zone: technical
+    status: active
+    size_bytes: 12448
+  - path: docs/technical-docs/cloud-translation.md
+    title: "Tłumaczenie w chmurze — Tłumacz V4"
+    zone: technical
+    status: active
+    size_bytes: 3423
+  - path: docs/technical-docs/functional-capabilities.md
+    title: "Macierz funkcjonalna Tłumacza V4"
+    zone: technical
+    status: active
+    size_bytes: 16067
+  - path: docs/technical-docs/index.md
+    title: "Tłumacz V4 — dokumentacja techniczna"
+    zone: technical
+    status: active
+    size_bytes: 6241
+  - path: docs/technical-docs/models.md
+    title: "Modele i backendy tłumaczenia — Tłumacz V4"
+    zone: technical
+    status: active
+    size_bytes: 4890
+  - path: docs/technical-docs/paczki-jezykowe-specyfikacja.md
+    title: "Specyfikacja paczki językowej Apertium"
+    zone: technical
+    status: active
+    size_bytes: 6259
+  - path: docs/technical-docs/plugin-okapi-filter.md
+    title: ".tplugin — format i architektura pluginów filtrów Okapi"
+    zone: technical
+    status: active
+    size_bytes: 22689
+  - path: docs/technical-docs/server-management.md
+    title: "Zarządzanie runtime — Tłumacz V4"
+    zone: technical
+    status: active
+    size_bytes: 3445
+  - path: docs/technical-docs/tplugin-administracja-pakiety.md
+    title: "Backend administracyjny TPlugin"
+    zone: technical
+    status: active
+    size_bytes: 4894
+  - path: docs/technical-docs/tplugin-reczne-tworzenie.md
+    title: "Ręczne tworzenie paczki TPlugin"
+    zone: technical
+    status: active
+    size_bytes: 7536
+  - path: docs/technical-docs/tplugin-specyfikacja-reczne-tworzenie.md
+    title: "Specyfikacja i ręczne tworzenie TPlugin"
+    zone: technical
+    status: active
+    size_bytes: 8705
+  - path: docs/technical-docs/tplugin-zarzadzanie-zaleznosciami.md
+    title: "System zarządzania zależnościami TPlugin"
+    zone: technical
+    status: active
+    size_bytes: 7595
+  - path: docs/technical-docs/translation-pipeline-contracts.md
+    title: "Kontrakty pipeline tłumaczenia — Tłumacz V4"
+    zone: technical
+    status: active
+    size_bytes: 8525
+  - path: docs/technical-docs/tworzenie-paczek-jezykowych.md
+    title: "Tworzenie paczek językowych Apertium"
+    zone: technical
+    status: active
+    size_bytes: 7889
+  - path: docs/technical-docs/tworzenie-pluginow-okapi.md
+    title: "Tworzenie pluginów Okapi z wykorzystaniem narzędzi TPlugin"
+    zone: technical
+    status: active
+    size_bytes: 14271
+  - path: docs/technical-docs/user-guide.md
+    title: "Podręcznik użytkownika — Tłumacz V4"
+    zone: technical
+    status: active
+    size_bytes: 4914
+  - path: docs/technical-docs/wybor-jezyka-Apertium.md
+    title: "Wybór języka Apertium"
+    zone: technical
+    status: closed
+    size_bytes: 6331
+  - path: docs/technical-docs/xliff-pipeline.md
+    title: "Filtr XLIFF 2.0 — Tłumacz V4"
+    zone: technical
+    status: active
+    size_bytes: 1135
+  - path: docs/Testy/AUDYT_TESTY_2026-10-01.md
+    title: "STATUS DOKUMENTU: HISTORYCZNY / EVIDENCE"
+    zone: tests
+    status: evidence
+    size_bytes: 1829
+  - path: docs/Testy/CPU_AB_ROZDZIELONE_6T_2026-09-24.log
+    title: "CPU_AB_ROZDZIELONE_6T_2026-09-24.log"
+    zone: tests
+    status: evidence
+    size_bytes: 51
+  - path: docs/Testy/CPU_GENERIC_NATIVE_AB_6T_R1_2026-09-24.log
+    title: "CPU_GENERIC_NATIVE_AB_6T_R1_2026-09-24.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1797
+  - path: docs/Testy/CPU_STANDARD_6T_2026-09-24.log
+    title: "CPU_STANDARD_6T_2026-09-24.log"
+    zone: tests
+    status: evidence
+    size_bytes: 667
+  - path: docs/Testy/CPU_STANDARD_6T_MONITOR_2026-09-24.log
+    title: "CPU_STANDARD_6T_MONITOR_2026-09-24.log"
+    zone: tests
+    status: evidence
+    size_bytes: 45198
+  - path: docs/Testy/kompilacja-testow.odt
+    title: "kompilacja-testow.odt"
+    zone: tests
+    status: evidence
+    size_bytes: 70070
+  - path: docs/Testy/llama.cpp/3A_SERIA_2026-09-24.log
+    title: "3A_SERIA_2026-09-24.log"
+    zone: tests
+    status: evidence
+    size_bytes: 4964238
+  - path: docs/Testy/llama.cpp/CPU_GENERIC_6T_SENSOR_2026-09-24.log
+    title: "CPU_GENERIC_6T_SENSOR_2026-09-24.log"
+    zone: tests
+    status: evidence
+    size_bytes: 29321
+  - path: docs/Testy/llama.cpp/CPU_GENERIC_AVX2_6T_2026-09-25.log
+    title: "CPU_GENERIC_AVX2_6T_2026-09-25.log"
+    zone: tests
+    status: evidence
+    size_bytes: 749
+  - path: docs/Testy/llama.cpp/CPU_GENERIC_NATIVE_AB_6T_2026-09-24.log
+    title: "CPU_GENERIC_NATIVE_AB_6T_2026-09-24.log"
+    zone: tests
+    status: evidence
+    size_bytes: 11083
+  - path: docs/Testy/llama.cpp/CPU_GENERIC_NATIVE_AB_6T_NOWARMUP_2026-09-24.log
+    title: "CPU_GENERIC_NATIVE_AB_6T_NOWARMUP_2026-09-24.log"
+    zone: tests
+    status: evidence
+    size_bytes: 6113
+  - path: docs/Testy/llama.cpp/CPU_NATIVE_6T_2026-09-24.log
+    title: "CPU_NATIVE_6T_2026-09-24.log"
+    zone: tests
+    status: evidence
+    size_bytes: 663
+  - path: docs/Testy/llama.cpp/CPU_NATIVE_6T_MONITOR_2026-09-24.log
+    title: "CPU_NATIVE_6T_MONITOR_2026-09-24.log"
+    zone: tests
+    status: evidence
+    size_bytes: 48195
+  - path: docs/Testy/llama.cpp/CPU_NATIVE_AB_6T_2026-09-25.log
+    title: "CPU_NATIVE_AB_6T_2026-09-25.log"
+    zone: tests
+    status: evidence
+    size_bytes: 641
+  - path: docs/Testy/llama.cpp/CPU_NATIVE_SERIA_2026-09-24.log
+    title: "CPU_NATIVE_SERIA_2026-09-24.log"
+    zone: tests
+    status: evidence
+    size_bytes: 3546
+  - path: docs/Testy/llama.cpp/T0_BASELINE_2026-09-26.log
+    title: "T0_BASELINE_2026-09-26.log"
+    zone: tests
+    status: evidence
+    size_bytes: 719
+  - path: docs/Testy/llama.cpp/T1a_THREADS_2026-09-26.log
+    title: "T1a_THREADS_2026-09-26.log"
+    zone: tests
+    status: evidence
+    size_bytes: 4028
+  - path: docs/Testy/llama.cpp/T1b_THREADS_BATCH_2026-09-26.log
+    title: "T1b_THREADS_BATCH_2026-09-26.log"
+    zone: tests
+    status: evidence
+    size_bytes: 2168
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel1-run2.json
+    title: "testy-llama-data-parallel1-run2.json"
+    zone: tests
+    status: evidence
+    size_bytes: 885
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel1-run3.json
+    title: "testy-llama-data-parallel1-run3.json"
+    zone: tests
+    status: evidence
+    size_bytes: 885
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel1-run4.json
+    title: "testy-llama-data-parallel1-run4.json"
+    zone: tests
+    status: evidence
+    size_bytes: 886
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel1-run5.json
+    title: "testy-llama-data-parallel1-run5.json"
+    zone: tests
+    status: evidence
+    size_bytes: 885
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel2-run2.json
+    title: "testy-llama-data-parallel2-run2.json"
+    zone: tests
+    status: evidence
+    size_bytes: 885
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel2-run3.json
+    title: "testy-llama-data-parallel2-run3.json"
+    zone: tests
+    status: evidence
+    size_bytes: 887
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel2-run4.json
+    title: "testy-llama-data-parallel2-run4.json"
+    zone: tests
+    status: evidence
+    size_bytes: 887
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel2-run5.json
+    title: "testy-llama-data-parallel2-run5.json"
+    zone: tests
+    status: evidence
+    size_bytes: 883
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel2.json
+    title: "testy-llama-data-parallel2.json"
+    zone: tests
+    status: evidence
+    size_bytes: 1475
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel4-run2.json
+    title: "testy-llama-data-parallel4-run2.json"
+    zone: tests
+    status: evidence
+    size_bytes: 887
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel4-run3.json
+    title: "testy-llama-data-parallel4-run3.json"
+    zone: tests
+    status: evidence
+    size_bytes: 889
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel4-run4.json
+    title: "testy-llama-data-parallel4-run4.json"
+    zone: tests
+    status: evidence
+    size_bytes: 885
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel4-run5.json
+    title: "testy-llama-data-parallel4-run5.json"
+    zone: tests
+    status: evidence
+    size_bytes: 886
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel4.json
+    title: "testy-llama-data-parallel4.json"
+    zone: tests
+    status: evidence
+    size_bytes: 1471
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel6-run1.json
+    title: "testy-llama-data-parallel6-run1.json"
+    zone: tests
+    status: evidence
+    size_bytes: 887
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel6-run2.json
+    title: "testy-llama-data-parallel6-run2.json"
+    zone: tests
+    status: evidence
+    size_bytes: 888
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel6-run3.json
+    title: "testy-llama-data-parallel6-run3.json"
+    zone: tests
+    status: evidence
+    size_bytes: 883
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel6-run4.json
+    title: "testy-llama-data-parallel6-run4.json"
+    zone: tests
+    status: evidence
+    size_bytes: 888
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel6-run5.json
+    title: "testy-llama-data-parallel6-run5.json"
+    zone: tests
+    status: evidence
+    size_bytes: 886
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel8-run2.json
+    title: "testy-llama-data-parallel8-run2.json"
+    zone: tests
+    status: evidence
+    size_bytes: 899
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel8-run3.json
+    title: "testy-llama-data-parallel8-run3.json"
+    zone: tests
+    status: evidence
+    size_bytes: 895
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel8-run4.json
+    title: "testy-llama-data-parallel8-run4.json"
+    zone: tests
+    status: evidence
+    size_bytes: 899
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel8-run5.json
+    title: "testy-llama-data-parallel8-run5.json"
+    zone: tests
+    status: evidence
+    size_bytes: 900
+  - path: docs/Testy/llama.cpp/dane-surowe/testy-llama-data-parallel8.json
+    title: "testy-llama-data-parallel8.json"
+    zone: tests
+    status: evidence
+    size_bytes: 1488
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1b_tb1-server.log
+    title: "T1b_tb1-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10286
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1b_tb1.json
+    title: "T1b_tb1.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2122
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1b_tb12-server.log
+    title: "T1b_tb12-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 9936
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1b_tb12.json
+    title: "T1b_tb12.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2131
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1b_tb16-server.log
+    title: "T1b_tb16-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10139
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1b_tb16.json
+    title: "T1b_tb16.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2344
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1b_tb2-server.log
+    title: "T1b_tb2-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1b_tb2.json
+    title: "T1b_tb2.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2341
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1b_tb4-server.log
+    title: "T1b_tb4-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1b_tb4.json
+    title: "T1b_tb4.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2336
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1b_tb6-server.log
+    title: "T1b_tb6-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 9936
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1b_tb6.json
+    title: "T1b_tb6.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2393
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1b_tb8-server.log
+    title: "T1b_tb8-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10139
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1b_tb8.json
+    title: "T1b_tb8.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2399
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1c_tb12_confirm-server.log
+    title: "T1c_tb12_confirm-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1c_tb12_confirm.json
+    title: "T1c_tb12_confirm.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2399
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1c_tb16_confirm-server.log
+    title: "T1c_tb16_confirm-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1c_tb16_confirm.json
+    title: "T1c_tb16_confirm.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2393
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1c_tb1_confirm-server.log
+    title: "T1c_tb1_confirm-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10496
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1c_tb1_confirm.json
+    title: "T1c_tb1_confirm.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2384
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1c_tb2_confirm-server.log
+    title: "T1c_tb2_confirm-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 9936
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1c_tb2_confirm.json
+    title: "T1c_tb2_confirm.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2341
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1c_tb4_confirm-server.log
+    title: "T1c_tb4_confirm-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10146
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1c_tb4_confirm.json
+    title: "T1c_tb4_confirm.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2401
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1c_tb6_confirm-server.log
+    title: "T1c_tb6_confirm-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10243
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1c_tb6_confirm.json
+    title: "T1c_tb6_confirm.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2389
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1c_tb8_confirm-server.log
+    title: "T1c_tb8_confirm-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T1c_tb8_confirm.json
+    title: "T1c_tb8_confirm.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2399
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2_b1024_ub256-server.log
+    title: "T2_b1024_ub256-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2_b1024_ub256.json
+    title: "T2_b1024_ub256.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2386
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2_b2048_ub512-server.log
+    title: "T2_b2048_ub512-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2_b2048_ub512.json
+    title: "T2_b2048_ub512.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2334
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2_b4096_ub1024-server.log
+    title: "T2_b4096_ub1024-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2_b4096_ub1024.json
+    title: "T2_b4096_ub1024.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2398
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2_b512_ub128-server.log
+    title: "T2_b512_ub128-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 9922
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2_b512_ub128.json
+    title: "T2_b512_ub128.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2135
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2c_b1024_ub256-server.log
+    title: "T2c_b1024_ub256-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10733
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2c_b1024_ub256.json
+    title: "T2c_b1024_ub256.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2394
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2c_b2048_ub512-server.log
+    title: "T2c_b2048_ub512-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10146
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2c_b2048_ub512.json
+    title: "T2c_b2048_ub512.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2341
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2c_b4096_ub1024-server.log
+    title: "T2c_b4096_ub1024-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2c_b4096_ub1024.json
+    title: "T2c_b4096_ub1024.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2335
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2c_b512_ub128-server.log
+    title: "T2c_b512_ub128-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10523
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2c_b512_ub128.json
+    title: "T2c_b512_ub128.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2125
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2d_b512_ub128_repeat-server.log
+    title: "T2d_b512_ub128_repeat-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10943
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2d_b512_ub128_repeat.json
+    title: "T2d_b512_ub128_repeat.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2339
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2e_b2048_ub512_confirm-server.log
+    title: "T2e_b2048_ub512_confirm-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10146
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T2e_b2048_ub512_confirm.json
+    title: "T2e_b2048_ub512_confirm.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2388
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T3_fa_off-server.log
+    title: "T3_fa_off-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10139
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T3_fa_off.json
+    title: "T3_fa_off.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2400
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T3_fa_on-server.log
+    title: "T3_fa_on-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10146
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/T3_fa_on.json
+    title: "T3_fa_on.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2397
+  - path: docs/Testy/llama.cpp/night_runner_2026-09-26/runner.log
+    title: "runner.log"
+    zone: tests
+    status: evidence
+    size_bytes: 69411
+  - path: docs/Testy/llama.cpp/parallel_2000_threads_2026-09-25.jsonl
+    title: "parallel_2000_threads_2026-09-25.jsonl"
+    zone: tests
+    status: evidence
+    size_bytes: 11528
+  - path: docs/Testy/llama.cpp/request_ab_2026-09-25/generic_results.jsonl
+    title: "generic_results.jsonl"
+    zone: tests
+    status: evidence
+    size_bytes: 747
+  - path: docs/Testy/llama.cpp/request_ab_2026-09-25/generic_server.log
+    title: "generic_server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 3542
+  - path: docs/Testy/llama.cpp/request_ab_2026-09-25/native_results.jsonl
+    title: "native_results.jsonl"
+    zone: tests
+    status: evidence
+    size_bytes: 746
+  - path: docs/Testy/llama.cpp/request_ab_2026-09-25/native_server.log
+    title: "native_server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 3615
+  - path: docs/Testy/llama.cpp/request_threads_batch_native_2026-09-25.jsonl
+    title: "request_threads_batch_native_2026-09-25.jsonl"
+    zone: tests
+    status: evidence
+    size_bytes: 0
+  - path: docs/Testy/llama.cpp/request_threads_native_2026-09-25.jsonl
+    title: "request_threads_native_2026-09-25.jsonl"
+    zone: tests
+    status: evidence
+    size_bytes: 384
+  - path: docs/Testy/llama.cpp/request_threads_native_4T_2026-09-25-server.log
+    title: "request_threads_native_4T_2026-09-25-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 3615
+  - path: docs/Testy/llama.cpp/request_threads_native_8T_2026-09-25-server.log
+    title: "request_threads_native_8T_2026-09-25-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 3615
+  - path: docs/Testy/llama.cpp/t11_2026-09-26/T11_ctx_16384-server.log
+    title: "T11_ctx_16384-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10357
+  - path: docs/Testy/llama.cpp/t11_2026-09-26/T11_ctx_16384.json
+    title: "T11_ctx_16384.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2386
+  - path: docs/Testy/llama.cpp/t11_2026-09-26/T11_ctx_4096-server.log
+    title: "T11_ctx_4096-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/t11_2026-09-26/T11_ctx_4096.json
+    title: "T11_ctx_4096.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2382
+  - path: docs/Testy/llama.cpp/t11_2026-09-26/T11_ctx_8192-server.log
+    title: "T11_ctx_8192-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/t11_2026-09-26/T11_ctx_8192.json
+    title: "T11_ctx_8192.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2386
+  - path: docs/Testy/llama.cpp/t11_2026-09-26/T11_parallel4_kvu_off-server.log
+    title: "T11_parallel4_kvu_off-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 15359
+  - path: docs/Testy/llama.cpp/t11_2026-09-26/T11_parallel4_kvu_off.json
+    title: "T11_parallel4_kvu_off.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2321
+  - path: docs/Testy/llama.cpp/t11_2026-09-26/T11_parallel4_kvu_on-server.log
+    title: "T11_parallel4_kvu_on-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 15461
+  - path: docs/Testy/llama.cpp/t11_2026-09-26/T11_parallel4_kvu_on.json
+    title: "T11_parallel4_kvu_on.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2323
+  - path: docs/Testy/llama.cpp/t12_2026-09-27/T12_numa_baseline-server.log
+    title: "T12_numa_baseline-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10565
+  - path: docs/Testy/llama.cpp/t12_2026-09-27/T12_numa_baseline.json
+    title: "T12_numa_baseline.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2390
+  - path: docs/Testy/llama.cpp/t12_2026-09-27/T12_numa_isolate-server.log
+    title: "T12_numa_isolate-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10460
+  - path: docs/Testy/llama.cpp/t12_2026-09-27/T12_numa_isolate.json
+    title: "T12_numa_isolate.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2389
+  - path: docs/Testy/llama.cpp/t12_2026-09-27/T12_numa_numactl-server.log
+    title: "T12_numa_numactl-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/t12_2026-09-27/T12_numa_numactl.json
+    title: "T12_numa_numactl.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2384
+  - path: docs/Testy/llama.cpp/testy-llama-23-09-2026-parallel1.json
+    title: "testy-llama-23-09-2026-parallel1.json"
+    zone: tests
+    status: evidence
+    size_bytes: 12641
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T10_repack_off-server.log
+    title: "T10_repack_off-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T10_repack_off.json
+    title: "T10_repack_off.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2383
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T10_repack_off.stdout.log
+    title: "T10_repack_off.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1035
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T10_repack_on-server.log
+    title: "T10_repack_on-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 9936
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T10_repack_on.json
+    title: "T10_repack_on.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2333
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T10_repack_on.stdout.log
+    title: "T10_repack_on.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1034
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T10_runner.log
+    title: "T10_runner.log"
+    zone: tests
+    status: evidence
+    size_bytes: 199
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb12_tokenizer-server.log
+    title: "T1c_tb12_tokenizer-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10146
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb12_tokenizer.json
+    title: "T1c_tb12_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2338
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb12_tokenizer.stdout.log
+    title: "T1c_tb12_tokenizer.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1051
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb16_tokenizer-server.log
+    title: "T1c_tb16_tokenizer-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10894
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb16_tokenizer.json
+    title: "T1c_tb16_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2359
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb16_tokenizer.stdout.log
+    title: "T1c_tb16_tokenizer.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1052
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb1_tokenizer-server.log
+    title: "T1c_tb1_tokenizer-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10182
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb1_tokenizer.json
+    title: "T1c_tb1_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2327
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb1_tokenizer.stdout.log
+    title: "T1c_tb1_tokenizer.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1050
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb2_tokenizer-server.log
+    title: "T1c_tb2_tokenizer-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb2_tokenizer.json
+    title: "T1c_tb2_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2399
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb2_tokenizer.stdout.log
+    title: "T1c_tb2_tokenizer.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1050
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb4_tokenizer-server.log
+    title: "T1c_tb4_tokenizer-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb4_tokenizer.json
+    title: "T1c_tb4_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2335
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb4_tokenizer.stdout.log
+    title: "T1c_tb4_tokenizer.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1050
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb6_tokenizer-server.log
+    title: "T1c_tb6_tokenizer-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10461
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb6_tokenizer.json
+    title: "T1c_tb6_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2396
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb6_tokenizer.stdout.log
+    title: "T1c_tb6_tokenizer.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1050
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb8_tokenizer-server.log
+    title: "T1c_tb8_tokenizer-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10460
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb8_tokenizer.json
+    title: "T1c_tb8_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2400
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T1c_tb8_tokenizer.stdout.log
+    title: "T1c_tb8_tokenizer.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1050
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_b1024_ub256_tokenizer-server.log
+    title: "T2_b1024_ub256_tokenizer-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10943
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_b1024_ub256_tokenizer.json
+    title: "T2_b1024_ub256_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2390
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_b1024_ub256_tokenizer.stdout.log
+    title: "T2_b1024_ub256_tokenizer.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1058
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_b2048_ub512_tokenizer-server.log
+    title: "T2_b2048_ub512_tokenizer-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_b2048_ub512_tokenizer.json
+    title: "T2_b2048_ub512_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2341
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_b2048_ub512_tokenizer.stdout.log
+    title: "T2_b2048_ub512_tokenizer.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1057
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_b4096_ub1024_tokenizer-server.log
+    title: "T2_b4096_ub1024_tokenizer-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_b4096_ub1024_tokenizer.json
+    title: "T2_b4096_ub1024_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2340
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_b4096_ub1024_tokenizer.stdout.log
+    title: "T2_b4096_ub1024_tokenizer.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1058
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_b512_ub128_tokenizer-server.log
+    title: "T2_b512_ub128_tokenizer-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10955
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_b512_ub128_tokenizer.json
+    title: "T2_b512_ub128_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2400
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_b512_ub128_tokenizer.stdout.log
+    title: "T2_b512_ub128_tokenizer.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1057
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_tb12_b1024_ub256_tokenizer.json
+    title: "T2_tb12_b1024_ub256_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2347
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_tb12_b1024_ub256_tokenizer.server.log
+    title: "T2_tb12_b1024_ub256_tokenizer.server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10943
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_tb12_b2048_ub512_tokenizer.json
+    title: "T2_tb12_b2048_ub512_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2397
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_tb12_b2048_ub512_tokenizer.server.log
+    title: "T2_tb12_b2048_ub512_tokenizer.server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_tb12_b4096_ub1024_tokenizer.json
+    title: "T2_tb12_b4096_ub1024_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2338
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_tb12_b4096_ub1024_tokenizer.server.log
+    title: "T2_tb12_b4096_ub1024_tokenizer.server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 9721
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_tb12_b512_ub128_tokenizer.json
+    title: "T2_tb12_b512_ub128_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2398
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T2_tb12_b512_ub128_tokenizer.server.log
+    title: "T2_tb12_b512_ub128_tokenizer.server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10943
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T3_fa_off_tokenizer-server.log
+    title: "T3_fa_off_tokenizer-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10146
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T3_fa_off_tokenizer.json
+    title: "T3_fa_off_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2390
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T3_fa_off_tokenizer.stdout.log
+    title: "T3_fa_off_tokenizer.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1052
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T3_fa_on_tokenizer-server.log
+    title: "T3_fa_on_tokenizer-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T3_fa_on_tokenizer.json
+    title: "T3_fa_on_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2340
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T3_fa_on_tokenizer.stdout.log
+    title: "T3_fa_on_tokenizer.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1051
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T3_tb12_b4096_ub1024_fa_off_tokenizer.json
+    title: "T3_tb12_b4096_ub1024_fa_off_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2404
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T3_tb12_b4096_ub1024_fa_off_tokenizer.server.log
+    title: "T3_tb12_b4096_ub1024_fa_off_tokenizer.server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 9936
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T3_tb12_b4096_ub1024_fa_on_tokenizer.json
+    title: "T3_tb12_b4096_ub1024_fa_on_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2398
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T3_tb12_b4096_ub1024_fa_on_tokenizer.server.log
+    title: "T3_tb12_b4096_ub1024_fa_on_tokenizer.server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 9719
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T3_tb12_fa_off_tokenizer.json
+    title: "T3_tb12_fa_off_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2395
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T3_tb12_fa_off_tokenizer.server.log
+    title: "T3_tb12_fa_off_tokenizer.server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T3_tb12_fa_on_tokenizer.json
+    title: "T3_tb12_fa_on_tokenizer.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2344
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T3_tb12_fa_on_tokenizer.server.log
+    title: "T3_tb12_fa_on_tokenizer.server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T4_kv_default-server.log
+    title: "T4_kv_default-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 682
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T4_kv_f16_f16-server.log
+    title: "T4_kv_f16_f16-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10146
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T4_kv_f16_f16.json
+    title: "T4_kv_f16_f16.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2424
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T4_kv_f16_f16.stdout.log
+    title: "T4_kv_f16_f16.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1046
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T4_kv_q8-server.log
+    title: "T4_kv_q8-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1590
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T4_kv_q8_q8_fa_on-server.log
+    title: "T4_kv_q8_q8_fa_on-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 9938
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T4_kv_q8_q8_fa_on.json
+    title: "T4_kv_q8_q8_fa_on.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2343
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T4_kv_q8_q8_fa_on.stdout.log
+    title: "T4_kv_q8_q8_fa_on.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1050
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T4_kv_q8k_f16v-server.log
+    title: "T4_kv_q8k_f16v-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 9831
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T4_kv_q8k_f16v.json
+    title: "T4_kv_q8k_f16v.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2363
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T4_kv_q8k_f16v.stdout.log
+    title: "T4_kv_q8k_f16v.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1047
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_cache_off-server.log
+    title: "T5_cache_off-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10146
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_cache_off.json
+    title: "T5_cache_off.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2339
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_cache_off.stdout.log
+    title: "T5_cache_off.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1045
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_cache_on-server.log
+    title: "T5_cache_on-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_cache_on.json
+    title: "T5_cache_on.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2404
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_cache_on.stdout.log
+    title: "T5_cache_on.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1044
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_cache_reuse256-server.log
+    title: "T5_cache_reuse256-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10351
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_cache_reuse256.json
+    title: "T5_cache_reuse256.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2365
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_cache_reuse256.stdout.log
+    title: "T5_cache_reuse256.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1050
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_runner.log
+    title: "T5_runner.log"
+    zone: tests
+    status: evidence
+    size_bytes: 341
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_same_off-server.log
+    title: "T5_same_off-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 3907
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_same_off-timing-server.log
+    title: "T5_same_off-timing-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1209
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_same_off-timing.log
+    title: "T5_same_off-timing.log"
+    zone: tests
+    status: evidence
+    size_bytes: 99
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_same_on-server.log
+    title: "T5_same_on-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 3615
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_same_on-timing-server.log
+    title: "T5_same_on-timing-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1209
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_same_on-timing.log
+    title: "T5_same_on-timing.log"
+    zone: tests
+    status: evidence
+    size_bytes: 97
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_same_reuse256-server.log
+    title: "T5_same_reuse256-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 3715
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_same_reuse256-timing-server.log
+    title: "T5_same_reuse256-timing-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1309
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T5_same_reuse256-timing.log
+    title: "T5_same_reuse256-timing.log"
+    zone: tests
+    status: evidence
+    size_bytes: 97
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T6_parallel1-server.log
+    title: "T6_parallel1-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10461
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T6_parallel1.json
+    title: "T6_parallel1.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2393
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T6_parallel1.stdout.log
+    title: "T6_parallel1.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1045
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T6_parallel2-server.log
+    title: "T6_parallel2-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 15259
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T6_parallel2.json
+    title: "T6_parallel2.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2884
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T6_parallel2.stdout.log
+    title: "T6_parallel2.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1045
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T6_parallel4-server.log
+    title: "T6_parallel4-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 24119
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T6_parallel4.json
+    title: "T6_parallel4.json"
+    zone: tests
+    status: evidence
+    size_bytes: 3819
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T6_parallel4.stdout.log
+    title: "T6_parallel4.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1045
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T6_parallel8_screen-server.log
+    title: "T6_parallel8_screen-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 25076
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T6_parallel8_screen.json
+    title: "T6_parallel8_screen.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2960
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T6_parallel8_screen.stdout.log
+    title: "T6_parallel8_screen.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 996
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T6_runner.log
+    title: "T6_runner.log"
+    zone: tests
+    status: evidence
+    size_bytes: 312
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T7_decode_range_batch_all-server.log
+    title: "T7_decode_range_batch_all-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T7_decode_range_batch_all.json
+    title: "T7_decode_range_batch_all.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2337
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T7_decode_range_batch_all.stdout.log
+    title: "T7_decode_range_batch_all.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1046
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T7_decode_range_batch_all_strict-server.log
+    title: "T7_decode_range_batch_all_strict-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T7_decode_range_batch_all_strict.json
+    title: "T7_decode_range_batch_all_strict.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2389
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T7_decode_range_batch_all_strict.stdout.log
+    title: "T7_decode_range_batch_all_strict.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1053
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T7_no_affinity-server.log
+    title: "T7_no_affinity-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10461
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T7_no_affinity.json
+    title: "T7_no_affinity.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2384
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T7_no_affinity.stdout.log
+    title: "T7_no_affinity.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1035
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T7_range_0_7-server.log
+    title: "T7_range_0_7-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10501
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T7_range_0_7.json
+    title: "T7_range_0_7.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2386
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T7_range_0_7.stdout.log
+    title: "T7_range_0_7.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1034
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T7_runner.log
+    title: "T7_runner.log"
+    zone: tests
+    status: evidence
+    size_bytes: 661
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T7_split_decode_batch-server.log
+    title: "T7_split_decode_batch-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 7038
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T7_split_decode_batch.stdout.log
+    title: "T7_split_decode_batch.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 0
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T8_poll0-server.log
+    title: "T8_poll0-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T8_poll0.json
+    title: "T8_poll0.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2328
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T8_poll0.stdout.log
+    title: "T8_poll0.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1029
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T8_poll100-server.log
+    title: "T8_poll100-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10356
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T8_poll100.json
+    title: "T8_poll100.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2386
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T8_poll100.stdout.log
+    title: "T8_poll100.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1031
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T8_poll50-server.log
+    title: "T8_poll50-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10146
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T8_poll50.json
+    title: "T8_poll50.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2126
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T8_poll50.stdout.log
+    title: "T8_poll50.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1030
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T8_runner.log
+    title: "T8_runner.log"
+    zone: tests
+    status: evidence
+    size_bytes: 288
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T9_mlock-server.log
+    title: "T9_mlock-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 290
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T9_mmap-server.log
+    title: "T9_mmap-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 10146
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T9_mmap.json
+    title: "T9_mmap.json"
+    zone: tests
+    status: evidence
+    size_bytes: 2330
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T9_mmap.stdout.log
+    title: "T9_mmap.stdout.log"
+    zone: tests
+    status: evidence
+    size_bytes: 1028
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T9_no_mmap-server.log
+    title: "T9_no_mmap-server.log"
+    zone: tests
+    status: evidence
+    size_bytes: 292
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T9_runner.log
+    title: "T9_runner.log"
+    zone: tests
+    status: evidence
+    size_bytes: 160
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/T9b_runner.log
+    title: "T9b_runner.log"
+    zone: tests
+    status: evidence
+    size_bytes: 48
+  - path: docs/Testy/llama.cpp/tokenizer_rerun_2026-09-26/runner.log
+    title: "runner.log"
+    zone: tests
+    status: evidence
+    size_bytes: 2430
+
+  - path: docs/technical-docs/kompendium-wiedzy-projektu-v4.md
+    title: "Tłumacz V4 — rozszerzone kompendium wiedzy technicznej"
+    zone: technical
+    status: active

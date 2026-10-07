@@ -1,0 +1,7 @@
+Der Mozhi-Modus „auto“ sucht automatisch die beste verfügbare Instanz für den ausgewählten Engine.
+
+Der Mechanismus prüft bekannte Instanzen parallel. Für jede Instanz werden API-Verfügbarkeit, der ausgewählte Engine und die Quellsprachen geprüft; anschließend wird eine Testübersetzung ausgeführt und die Antwortzeit gemessen. Nur Instanzen, die die erforderlichen Prüfungen bestehen und eine gültige, nicht leere Antwort liefern, bleiben Kandidaten.
+
+Aus den gültigen Instanzen wird die am schnellsten antwortende ausgewählt. Wenn innerhalb des Zeitlimits keine Instanz die Bedingungen erfüllt, wird die Standard-Fallback-Instanz verwendet. Eine manuell ausgewählte Instanz umgeht die automatische Auswahl.
+
+Die von „auto“ durchgeführten Prüfungen dienen ausschließlich der Auswahl der Instanz und ersetzen nicht die eigentliche Dokumentübersetzung.

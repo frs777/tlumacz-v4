@@ -1,0 +1,19 @@
+format = "tlumacz-doc-index"
+schema_version = 1
+project = "tlumacz-v4"
+status = "proposal"
+generated = "2026-09-30"
+
+[directories]
+Archiwum = "docs/Archiwum"
+Zrzuty = "docs/Zrzuty"
+Testy = "docs/Testy"
+Wdrożenia = "docs/Wdrożenia"
+Audyt = "docs/Audyt"
+Plany = "docs/Plany"
+
+[migration]
+source = "/home/frs/Projekty/agent-translator-v3"
+destination = "/home/frs/Projekty/tlumacz-v4"
+documents_moved = false
+approval_required = true

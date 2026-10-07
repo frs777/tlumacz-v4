@@ -1,0 +1,7 @@
+Apertium is a local rule-based backend. Translation does not use an LLM model; it uses language data and processing rules.
+
+The main limitation of Apertium comes from language pairs: translation is possible only when the active runtime provides the required data for the specific source → target direction. A pair is not the same thing as a general list of supported languages. For example, a package may provide eng-pol and pol-eng directions, but the availability of one direction must not be assumed without checking the runtime.
+
+Source and target languages are therefore tied to a specific pair. A missing or incomplete pair, missing required data artifacts, or unavailable runtime data means that the direction cannot be used. The presence of source files for a language package alone does not prove that the pair is ready for translation.
+
+Language pairs also have their own dependencies and licenses. Do not assume that every Apertium pair has the same status, completeness, or redistribution terms. Apertium checks the availability of the specific direction before translation starts.

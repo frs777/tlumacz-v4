@@ -1,0 +1,7 @@
+Apertium ist ein lokales regelbasiertes Backend. Die Übersetzung verwendet kein LLM-Modell, sondern Sprachdaten und Verarbeitungsregeln.
+
+Die wichtigste Einschränkung von Apertium ergibt sich aus den Sprachpaaren: Eine Übersetzung ist nur möglich, wenn die aktive Runtime die erforderlichen Daten für die konkrete Richtung Quelle → Ziel bereitstellt. Ein Sprachpaar ist nicht dasselbe wie eine allgemeine Liste unterstützter Sprachen. Ein Paket kann beispielsweise die Richtungen eng-pol und pol-eng bereitstellen; die Verfügbarkeit einer Richtung darf jedoch nicht ohne Prüfung der Runtime vorausgesetzt werden.
+
+Quell- und Zielsprache sind daher an ein konkretes Sprachpaar gebunden. Ein fehlendes oder unvollständiges Paar, fehlende Datenartefakte oder nicht verfügbare Runtime-Daten bedeuten, dass die Richtung nicht verwendet werden kann. Das Vorhandensein von Quelldateien eines Sprachpakets allein beweist nicht, dass das Paar für die Übersetzung bereit ist.
+
+Sprachpaare haben außerdem eigene Abhängigkeiten und Lizenzen. Es darf nicht angenommen werden, dass jedes Apertium-Paar denselben Status, dieselbe Vollständigkeit oder dieselben Bedingungen für die Weitergabe besitzt. Apertium prüft die Verfügbarkeit der konkreten Richtung vor Beginn der Übersetzung.

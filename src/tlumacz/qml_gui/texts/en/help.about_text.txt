@@ -1,0 +1,3 @@
+A document translation program with a Qt graphical interface.
+
+It supports llama.cpp, Cloud and Apertium.

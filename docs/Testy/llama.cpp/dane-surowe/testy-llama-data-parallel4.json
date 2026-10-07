@@ -1,0 +1,72 @@
+{
+  "date": "2026-09-23",
+  "test": 3,
+  "parallel": 4,
+  "model": "$HOME/Modele/translategemma-4b-it.Q5_K_M.gguf",
+  "ctx": 8192,
+  "threads": 4,
+  "threads_batch": 4,
+  "temperature": 0.0,
+  "chunk_size": 2000,
+  "source_chars": 9147,
+  "output_chars": 9745,
+  "chunks": [
+    {
+      "chunk": 1,
+      "source_chars": 1962,
+      "pp": 738,
+      "tg": 638,
+      "server_time_s": 288.895,
+      "tg_tps": 3.51
+    },
+    {
+      "chunk": 2,
+      "source_chars": 1974,
+      "pp": 729,
+      "tg": 623,
+      "server_time_s": 283.499,
+      "tg_tps": 3.53
+    },
+    {
+      "chunk": 3,
+      "source_chars": 1716,
+      "pp": 673,
+      "tg": 529,
+      "server_time_s": 239.676,
+      "tg_tps": 3.99
+    },
+    {
+      "chunk": 4,
+      "source_chars": 1965,
+      "pp": 738,
+      "tg": 641,
+      "server_time_s": 289.983,
+      "tg_tps": 3.5
+    },
+    {
+      "chunk": 5,
+      "source_chars": 1525,
+      "pp": 634,
+      "server_prompt_tokens": 478,
+      "tg": 464,
+      "server_time_s": 111.42,
+      "tg_tps": 5.0
+    }
+  ],
+  "pp_total": 3512,
+  "tg_total": 2895,
+  "wall_time_s": 354.31,
+  "pp_tps_benchmark": 9.91,
+  "tg_tps_wall": 8.17,
+  "source_chars_per_s": 25.82,
+  "output_chars_per_s": 27.51,
+  "speedup_vs_parallel1": 1.88,
+  "time_reduction_percent": 46.87,
+  "quality_percent": 75,
+  "complete": true,
+  "protocol_markers": 0,
+  "nonempty_lines_source": 70,
+  "nonempty_lines_output": 70,
+  "bullets_source": 20,
+  "bullets_output": 20
+}
