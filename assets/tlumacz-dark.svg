@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Ikona tłumacza — ź i 한">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17213D"/>
+      <stop offset="1" stop-color="#0A1025"/>
+    </linearGradient>
+    <linearGradient id="ribbonA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#55B7FF"/>
+      <stop offset="1" stop-color="#2E68FF"/>
+    </linearGradient>
+    <linearGradient id="ribbonB" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A96BFF"/>
+      <stop offset="1" stop-color="#5E39D8"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-opacity=".32"/>
+    </filter>
+  </defs>
+
+  <rect x="12" y="12" width="488" height="488" rx="112" fill="url(#bg)"/>
+
+  <!-- Two languages as forms rather than the usual A + 文 -->
+  <g filter="url(#shadow)">
+    <text x="112" y="302"
+      font-family="Noto Sans, DejaVu Sans, sans-serif"
+      font-size="178" font-weight="700"
+      fill="#FFFFFF">ź</text>
+
+    <text x="288" y="304"
+      font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif"
+      font-size="145" font-weight="700"
+      fill="#FFFFFF">한</text>
+  </g>
+
+  <!-- Interlocking translation ribbon -->
+  <path d="M82 354 C145 294 190 294 246 350 C300 404 350 406 430 326"
+        fill="none" stroke="url(#ribbonA)" stroke-width="28"
+        stroke-linecap="round"/>
+
+  <path d="M82 386 C151 326 190 326 244 378 C300 432 352 432 430 354"
+        fill="none" stroke="url(#ribbonB)" stroke-width="28"
+        stroke-linecap="round"/>
+
+  <!-- Small separation marks suggesting transformation -->
+  <circle cx="84" cy="354" r="6" fill="#FFFFFF" opacity=".9"/>
+  <circle cx="430" cy="326" r="6" fill="#FFFFFF" opacity=".9"/>
+</svg>
