@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tłumacz V4 — desktopowa aplikacja do tłumaczenia dokumentów z czterema backendami i rozdzielonym pipeline'em dokumentowym.">
+  <title>Tłumacz V4 — lokalne tłumaczenie dokumentów</title>
+  <link rel="icon" href="../src/tlumacz/tlumacz-light.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap">
+  <a class="brand" href="index.html" aria-label="Tłumacz V4 — strona główna"><img src="../src/tlumacz/tlumacz-light.svg" alt=""><span>Tłumacz <b>V4</b></span></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+  <button class="theme-toggle" type="button" aria-label="Motyw: systemowy. Zmień motyw" title="Motyw: systemowy. Zmień motyw"><span aria-hidden="true">◐</span> <span class="theme-label">Systemowy</span></button>
+  <nav id="main-nav" class="main-nav" aria-label="Główna nawigacja">
+    <a href="#funkcje">Funkcje</a><a href="zrzuty.html">Zrzuty ekranu</a><a href="#backendy">Backendy</a><a href="#formaty">Formaty</a><a href="filter-engine.html">Filter Engine</a><a href="pobieranie.html">Pobieranie</a><a href="komponenty.html">Komponenty i licencje</a>
+  </nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="container hero-grid"><div>
+  <p class="eyebrow">OPEN SOURCE · MIT · V4 0.40.0</p>
+  <h1>Tłumaczenie dokumentów bez zamykania się w jednym silniku.</h1>
+  <p class="lead">Tłumacz V4 rozdziela obsługę dokumentu od wykonania tłumaczenia. Cztery niezależne backendy — llama.cpp, Cloud, Apertium i Własny serwer — mogą korzystać z tego samego pipeline'u.</p>
+  <div class="actions" id="pobierz"><a class="button primary" href="pobieranie.html">Pobierz</a><a class="button secondary" href="https://github.com/frs777/tlumacz-v4">Kod źródłowy</a></div>
+  <p class="status-note"><strong>Stan:</strong> Release Candidate dla Linux x86-64. Finalny release jest jeszcze blokowany przez Apertium <code>eng-pol/cas_sp</code>, Windows oraz pełne zamknięcie dependency/licensing.</p>
+</div><div class="hero-card" aria-label="Najważniejsze informacje o projekcie">
+  <div class="metric"><strong>0.40.0</strong><span>wersja</span></div><div class="metric"><strong>6</strong><span>formatów dokumentowych</span></div><div class="metric"><strong>4</strong><span>backendy tłumaczeniowe</span></div><div class="metric"><strong>PL · EN · DE</strong><span>interfejs i pomoc</span></div>
+</div></div></section>
+
+<section class="section" id="funkcje"><div class="container">
+  <div class="section-heading"><p class="eyebrow">ARCHITEKTURA</p><h2>Dokument i silnik tłumaczeniowy są rozdzielone</h2><p>Format dokumentu określa ścieżkę wejścia. Formaty nietekstowe korzystają z Filter Engine, natomiast TXT, Markdown i przyszłe formaty tekstowe omijają filtry i trafiają do backendu jako tekst.</p></div>
+  <div class="pipeline"><div class="pipeline-row"><span class="pipeline-node">DOCX · ODT · HTML/XHTML · EPUB · XLIFF</span><span class="pipeline-arrow">→</span><span class="pipeline-node accent-node">Filter Engine<br><small>dekodowanie / ekstrakcja</small></span><span class="pipeline-arrow">→</span><span class="pipeline-node">wybrany backend</span><span class="pipeline-arrow">→</span><span class="pipeline-node accent-node">Filter Engine<br><small>rekonstrukcja</small></span><span class="pipeline-arrow">→</span><span class="pipeline-node">dokument</span></div><div class="pipeline-row text-path"><span class="pipeline-node">TXT · MD · przyszłe formaty tekstowe</span><span class="pipeline-arrow">→</span><span class="pipeline-node accent-node">tekst</span><span class="pipeline-arrow">→</span><span class="pipeline-node">wybrany backend</span><span class="pipeline-arrow">→</span><span class="pipeline-node accent-node">tekst wynikowy</span></div></div>
+  <div class="cards three"><article class="card"><span class="icon">01</span><h3>Ekstrakcja i rekonstrukcja</h3><p>Filter Engine dekoduje formaty nietekstowe, pracuje na jednostkach tłumaczeniowych i odtwarza dokument po zakończeniu tłumaczenia.</p></article><article class="card"><span class="icon">02</span><h3>Bezpośrednia ścieżka tekstowa</h3><p>TXT, Markdown oraz przyszłe formaty tekstowe nie przechodzą przez filtry dokumentowe. Backend otrzymuje tekst bezpośrednio.</p></article><article class="card"><span class="icon">03</span><h3>Cache i anulowanie</h3><p>SQLite cache uwzględnia tekst, prompt, skill, model i temperaturę, ma 7-dniowy TTL i może zostać wyczyszczony z GUI.</p></article></div>
+</div></section>
+
+<section class="section alt" id="backendy"><div class="container">
+  <div class="section-heading"><p class="eyebrow">BACKENDY</p><h2>Cztery osobne ścieżki wykonania tłumaczenia</h2><p>Każdy backend ma własną konfigurację i diagnostykę. Wszystkie mogą otrzymać tekst przygotowany przez Filter Engine, ale Filter Engine nie jest backendem.</p></div>
+  <div class="backend-grid four">
+    <article class="backend-card featured"><div class="tag">LOKALNIE</div><h3>llama.cpp</h3><p>Zarządzany <code>llama-server</code>, modele GGUF, port, CPU/GPU, współbieżność, health-check i szablon czatu.</p><a class="card-link" href="backendy/llama-cpp.html">Konfiguracja backendu →</a></article>
+    <article class="backend-card"><div class="tag">SIEĆ</div><h3>Cloud</h3><p>Router providerów z profilami usług, sekretami, timeoutami i wspólnym kontraktem dostawców.</p><a class="card-link" href="backendy/cloud.html">Konfiguracja backendu →</a></article>
+    <article class="backend-card"><div class="tag">LOKALNIE</div><h3>Apertium</h3><p>Osobny lokalny backend z runtime'em Apertium, discovery pakietów i mapowaniem ISO na pary językowe.</p><a class="card-link" href="backendy/apertium.html">Konfiguracja backendu →</a></article>
+    <article class="backend-card"><div class="tag">ZEWNĘTRZNY</div><h3>Własny serwer</h3><p>Backend <code>custom</code> kierujący żądania do serwera wskazanego przez użytkownika, z własnym endpointem, kluczem i modelem.</p><a class="card-link" href="backendy/wlasny-serwer.html">Konfiguracja backendu →</a></article>
+  </div>
+</div></section>
+
+<section class="section" id="formaty"><div class="container split"><div>
+  <p class="eyebrow">FORMATY</p><h2>Dwie ścieżki obsługi plików</h2>
+  <p>Filter Engine dotyczy formatów, których struktura musi zostać rozkodowana przed tłumaczeniem. Format tekstowy jest traktowany jako tekst wejściowy i omija filtry. Ta zasada obejmuje również przyszłe formaty tekstowe dodawane do aplikacji.</p>
+</div><div class="format-list">
+  <div><b>DOCX</b><span>.docx · Filter Engine</span></div><div><b>ODT</b><span>.odt · Filter Engine</span></div><div><b>HTML / XHTML</b><span>.html · .htm · .xhtml · Filter Engine</span></div><div><b>EPUB</b><span>.epub · Filter Engine</span></div><div><b>XLIFF 2.0</b><span>.xlf · .xliff · Filter Engine</span></div><div><b>TXT / Markdown</b><span>.txt · .md · bez filtrów</span></div>
+</div></div></section>
+
+<section class="section alt"><div class="container"><div class="section-heading"><p class="eyebrow">TRANSLATEGEMMA</p><h2>Specjalny kontrakt w llama.cpp, nie osobny backend</h2><p>TranslateGemma działa w V4 jako wartość <code>chat_template="translategemma"</code> dla llama.cpp. W tym trybie Lingua wykrywa język źródłowy, a aplikacja buduje dedykowane żądanie. Historyczne ścieżki FastAPI/OpenVINO nie są aktywną częścią V4.</p></div><div class="callout"><strong>Ważne:</strong> repozytorium nie zawiera wag modelu TranslateGemma. Model podlega własnym warunkom Google.</div></div></section>
+
+<section class="section" id="zaleznosci"><div class="container"><div class="section-heading"><p class="eyebrow">ZALEŻNOŚCI</p><h2>Co jest potrzebne poza kodem aplikacji?</h2></div>
+<div class="dependency-table" role="table" aria-label="Zależności zewnętrzne">
+<div class="tr head" role="row"><span>Komponent</span><span>Zakres</span><span>Rola</span></div>
+<div class="tr"><span>Python 3.12–3.14</span><span>wymagany</span><span>Runtime aplikacji</span></div><div class="tr"><span>PySide6 ≥ 6.5</span><span>Python</span><span>GUI QML</span></div><div class="tr"><span>lxml ≥ 5.0</span><span>Python</span><span>filtr HTML/XHTML</span></div><div class="tr"><span>lingua-language-detector ≥ 2.1.1</span><span>Python</span><span>detekcja źródła dla TranslateGemma</span></div><div class="tr"><span>openai ≥ 1.0</span><span>deklarowana</span><span>zależność dystrybucyjna; aktywny transport OpenAI-compatible korzysta z HTTP</span></div><div class="tr"><span>Java / javac</span><span>system</span><span>izolowany Java Filter Host dla Okapi</span></div><div class="tr"><span>llama-server + model GGUF</span><span>opcjonalne</span><span>lokalne tłumaczenie przez llama.cpp</span></div><div class="tr"><span>dane językowe Apertium</span><span>osobno</span><span>konkretne pary językowe w ~/.config/tlumacz/Apertium/</span></div>
+</div></div></section>
+
+<section class="section alt"><div class="container cta"><div><p class="eyebrow">LICENCJE I POCHODZENIE</p><h2>Komponenty zewnętrzne mają własne warunki.</h2><p>Tłumacz V4 jest na MIT, ale dołączane runtime'y, dane językowe i modele nie dziedziczą automatycznie tej licencji.</p></div><a class="button primary" href="komponenty.html">Zobacz komponenty i licencje</a></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><strong>Tłumacz V4</strong><p>Wersja 0.40.0 · Release Candidate · Linux x86-64</p></div><div><a href="https://github.com/frs777/tlumacz-v4">GitHub</a><a href="filter-engine.html">Filter Engine</a><a href="pobieranie.html">Pobieranie</a><a href="zrzuty.html">Zrzuty ekranu</a><a href="komponenty.html">Komponenty</a></div></div><div class="container copyright">© 2026 Tłumacz Team · <span id="year"></span></div></footer>
+<script src="app.js"></script></body></html>
